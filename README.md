@@ -1,1 +1,1 @@
-[![CircleCI](https://circleci.com/gh/XYOracleNetwork/app-saverasheed-react.svg?style=svg)](https://circleci.com/gh/XYOracleNetwork/app-saverasheed-react)
+[![CircleCI](https://circleci.com/gh/XYOracleNetwork/app-saverasheed-react.svg?style=svg&circle-token=9e54143830f02119fb9aa2844b625f65fda1a0ca)](https://circleci.com/gh/XYOracleNetwork/app-saverasheed-react)
