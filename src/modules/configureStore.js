@@ -19,9 +19,9 @@ import { isArray, noop } from '../util/ramda-extra'
 const multi = ({ dispatch }) => next => action =>
   isArray(action)
     ? pipe(
-    filter(Boolean),
-    map(dispatch),
-    )(action)
+        filter(Boolean),
+        map(dispatch),
+      )(action)
     : next(action)
 
 const logger = store => next => action => {
@@ -55,10 +55,14 @@ const composeEnhancers =
 
 export const history = createBrowserHistory()
 
-const createRootReducer = history => combineReducers({
-  ...reducers,
-  router: connectRouter(history),
-})
+const createRootReducer = history =>
+  combineReducers({
+    ...reducers,
+    router: connectRouter(history),
+  })
+
+const xyoIpfsUrl = 'https://ipfs.xyo.network/ipfs'
+const ipfsUrl = 'https://ipfs.infura.io'
 
 const configureStore = (initialState = {}, options) => {
   injectWeb3()
@@ -70,7 +74,7 @@ const configureStore = (initialState = {}, options) => {
 
   console.log('XY ACCOUNT', xya)
   const middleware = applyMiddleware(
-    createDataLoaderMiddleware(dataloaders, { xya }),
+    createDataLoaderMiddleware(dataloaders, { xya, xyoIpfsUrl, ipfsUrl }),
     multi,
     thunkMiddleware,
     routerMiddleware(history),

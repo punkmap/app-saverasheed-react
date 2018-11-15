@@ -35,35 +35,36 @@ const middleware = xya => store => {
 
   if (navigator.permissions) {
     navigator.permissions
-      .query({ name: 'geolocation' })
-      .then(permissionStatus => {
-        console.log('geolocation permission state is', permissionStatus.state)
-        store.dispatch(updateLocationPermission(permissionStatus.state))
-        if (!('geolocation' in navigator)) {
-          alert(
-            'Your browser does not seem to be supported. Please use a browser like Chrome or Safari.',
-          )
-        }
+             .query({ name: 'geolocation' })
+             .then(permissionStatus => {
+               console.log('geolocation permission state is', permissionStatus.state)
+               store.dispatch(updateLocationPermission(permissionStatus.state))
+               if (!('geolocation' in navigator)) {
+                 alert(
+                   'Your browser does not seem to be supported. Please use a browser like Chrome or Safari.',
+                 )
+               }
 
-        if (getIsLocationAllowed(store.getState())) {
-          if (id) {
-            navigator.geolocation.clearWatch(id)
-          }
-          id = navigator.geolocation.watchPosition(
-            watchPosition(store),
-            geolocationError,
-          )
-        }
-        permissionStatus.onchange = function() {
-          console.log('geolocation permission state has changed to', this.state)
-          store.dispatch(updateLocationPermission(this.state))
-        }
-      })
+               if (getIsLocationAllowed(store.getState())) {
+                 if (id) {
+                   navigator.geolocation.clearWatch(id)
+                 }
+                 id = navigator.geolocation.watchPosition(
+                   watchPosition(store),
+                   geolocationError,
+                 )
+               }
+               permissionStatus.onchange = function () {
+                 console.log('geolocation permission state has changed to', this.state)
+                 store.dispatch(updateLocationPermission(this.state))
+               }
+             })
   }
 
-  return next => {
-    return action => {
-      if (action.type === ALLOW_LOCATION) {
+  return next => action => {
+    switch (action.type) {
+      case ALLOW_LOCATION:
+        next(action)
         if (id) {
           navigator.geolocation.clearWatch(id)
         }
@@ -71,8 +72,9 @@ const middleware = xya => store => {
           watchPosition(store),
           geolocationError,
         )
-      }
-      return next(action)
+        break
+      default:
+        return next(action)
     }
   }
 }

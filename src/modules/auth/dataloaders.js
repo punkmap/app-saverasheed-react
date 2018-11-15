@@ -15,7 +15,6 @@ import {
 import { createLoader, fixedWait } from 'redux-dataloader'
 import { COMPLETED } from '../../fixtures/quests'
 
-import { baseIpfsUrl } from '../quest/middleware'
 import { getActiveQuestHash, getQuestWithStatus } from '../quest/selectors'
 import {
   FETCH_USER_DATA_REQUEST,
@@ -32,7 +31,7 @@ const fetchUserDataLoader = createLoader(
   {
     success: (context, result) => fetchUserDataSuccess(result),
     error: (context, error) => fetchUserDataFailure(error.message),
-    fetch: async ({ dispatch, getState, xya }) => {
+    fetch: async ({ dispatch, getState, xya, xyoIpfsUrl }) => {
       const userData = omit(['checkins'], await xya.getUserData())
 
       const checkinData = await xya.getCheckinData()
@@ -57,7 +56,7 @@ const fetchUserDataLoader = createLoader(
       const getCheckinData = async () => {
         if (currentCheckinHash) {
           const { data } = await axios.get(
-            `${baseIpfsUrl}/${currentCheckinHash}`,
+            `${xyoIpfsUrl}/${currentCheckinHash}`,
           )
           const { questData, checkinChain } = data
           return { [questData]: checkinChain }
@@ -72,7 +71,7 @@ const fetchUserDataLoader = createLoader(
       const completedQuests = await Promise.all(
         map(async ({ checkinProofsHash }) => {
           const { data } = await axios.get(
-            `${baseIpfsUrl}/${checkinProofsHash}`,
+            `${xyoIpfsUrl}/${checkinProofsHash}`,
           )
           return data
         }, completedQuestData),
@@ -101,6 +100,7 @@ const completeQuestDataLoader = createLoader(
       getState,
       dispatch,
       xya,
+      xyoIpfsUrl,
       action: {
         payload: { hash },
       },
@@ -129,7 +129,7 @@ const completeQuestDataLoader = createLoader(
           transactionHash: "0x72c4d6b13d07475fca29070bbe52e5f5882cdf2169809b918caffc4a95a52125"
          */
         const { data: checkinProofs } = await axios.get(
-          `${baseIpfsUrl}/${checkinProofsHash}`,
+          `${xyoIpfsUrl}/${checkinProofsHash}`,
         )
         return checkinProofs
       } else {

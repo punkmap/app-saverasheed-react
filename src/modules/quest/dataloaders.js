@@ -18,7 +18,6 @@ import {
   selectQuestFailure,
   fetchQuestRequest,
 } from './actions'
-import { baseIpfsUrl } from './middleware'
 import { getQuest, getQuests } from './selectors'
 
 const questLoader = createLoader(
@@ -26,7 +25,7 @@ const questLoader = createLoader(
   {
     success: (context, result) => fetchQuestSuccess(result),
     error: (context, error) => fetchQuestFailure(error),
-    fetch: async ({ action, getState }) => {
+    fetch: async ({ action, getState, xyoIpfsUrl }) => {
       const {
         payload: { questHash },
       } = action
@@ -36,7 +35,7 @@ const questLoader = createLoader(
         return existingQuest
       }
 
-      const ipfsUrl = `${baseIpfsUrl}/${questHash}`
+      const ipfsUrl = `${xyoIpfsUrl}/${questHash}`
       const {
         data: { quest },
       } = await axios.get(ipfsUrl)
@@ -70,11 +69,11 @@ const questsLoader = createLoader(
   {
     success: (context, result) => fetchQuestsSuccess(result),
     error: (context, error) => fetchQuestsFailure(error),
-    fetch: async ({ xya }) => {
+    fetch: async ({ xya, xyoIpfsUrl }) => {
       const questRes = await xya.getQuests()
       return await Promise.all(
         map(async ({ hash, networks }) => {
-          const ipfsUrl = `${baseIpfsUrl}/${hash}`
+          const ipfsUrl = `${xyoIpfsUrl}/${hash}`
           const {
             data: { quest },
           } = await axios.get(ipfsUrl)

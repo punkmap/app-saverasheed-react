@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'react-emotion'
 import Color from 'color'
+import { baseIpfsUrl } from '../../../fixtures/ipfs'
 
 import {
   COMPLETED,
@@ -9,7 +10,6 @@ import {
   questPropTypes,
 } from '../../../fixtures/quests'
 import topSecret from '../../../assets/top-secret.png'
-import { baseIpfsUrl } from '../../../modules/quest/middleware'
 import muiTheme from '../../../theme'
 import { noop } from '../../../util/ramda-extra'
 

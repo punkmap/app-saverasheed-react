@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'react-emotion'
+import { baseIpfsUrl } from '../../../fixtures/ipfs'
 import { poiPropTypes } from '../../../fixtures/pois'
-import { baseIpfsUrl } from '../../../modules/quest/middleware'
 
 import muiTheme from '../../../theme'
 import { mapArrIndexed } from '../../../util/ramda-extra'

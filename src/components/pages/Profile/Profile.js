@@ -2,13 +2,13 @@ import React, { Component, Fragment } from 'react'
 import styled, { css } from 'react-emotion'
 import PropTypes from 'prop-types'
 import { map } from 'ramda'
+import { baseIpfsUrl } from '../../../fixtures/ipfs'
 
 import {
   completedQuestPropTypes,
   questPropTypes,
 } from '../../../fixtures/quests'
 import { userPropTypes } from '../../../fixtures/users'
-import { baseIpfsUrl } from '../../../modules/quest/middleware'
 import theme from '../../../theme'
 import { reduceObj } from '../../../util/ramda-extra'
 import A from '../../atoms/A'
