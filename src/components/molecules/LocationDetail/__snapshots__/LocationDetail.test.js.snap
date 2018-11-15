@@ -1,0 +1,208 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LocationDetail renders children when passed in 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <LocationDetail
+    closePopup={[MockFunction]}
+    popupInfo={
+      Object {
+        "description": "Look out over beautiful San Diego harbor, do you see Jason Mraz or Nick Cannon?",
+        "hint": "Take a stroll down the boardwalk",
+        "name": "Broadway Pier",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <Styled(div)
+          onClick={[MockFunction]}
+        >
+          X
+        </Styled(div)>,
+        <Styled(h3)>
+          Broadway Pier
+        </Styled(h3)>,
+        <Styled(div)>
+          Look out over beautiful San Diego harbor, do you see Jason Mraz or Nick Cannon?
+        </Styled(div)>,
+        <Styled(div)>
+          Hint: 
+          Take a stroll down the boardwalk
+        </Styled(div)>,
+      ],
+      "className": "map-popup",
+      "onClickAway": [Function],
+      "popupWrapperClassName": "css-11u3goc",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "X",
+          "onClick": [MockFunction],
+        },
+        "ref": null,
+        "rendered": "X",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "Broadway Pier",
+        },
+        "ref": null,
+        "rendered": "Broadway Pier",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "Look out over beautiful San Diego harbor, do you see Jason Mraz or Nick Cannon?",
+        },
+        "ref": null,
+        "rendered": "Look out over beautiful San Diego harbor, do you see Jason Mraz or Nick Cannon?",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            "Hint: ",
+            "Take a stroll down the boardwalk",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Hint: ",
+          "Take a stroll down the boardwalk",
+        ],
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <Styled(div)
+            onClick={[MockFunction]}
+          >
+            X
+          </Styled(div)>,
+          <Styled(h3)>
+            Broadway Pier
+          </Styled(h3)>,
+          <Styled(div)>
+            Look out over beautiful San Diego harbor, do you see Jason Mraz or Nick Cannon?
+          </Styled(div)>,
+          <Styled(div)>
+            Hint: 
+            Take a stroll down the boardwalk
+          </Styled(div)>,
+        ],
+        "className": "map-popup",
+        "onClickAway": [Function],
+        "popupWrapperClassName": "css-11u3goc",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "X",
+            "onClick": [MockFunction],
+          },
+          "ref": null,
+          "rendered": "X",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Broadway Pier",
+          },
+          "ref": null,
+          "rendered": "Broadway Pier",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Look out over beautiful San Diego harbor, do you see Jason Mraz or Nick Cannon?",
+          },
+          "ref": null,
+          "rendered": "Look out over beautiful San Diego harbor, do you see Jason Mraz or Nick Cannon?",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              "Hint: ",
+              "Take a stroll down the boardwalk",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Hint: ",
+            "Take a stroll down the boardwalk",
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

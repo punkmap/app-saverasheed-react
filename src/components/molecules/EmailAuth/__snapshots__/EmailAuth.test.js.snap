@@ -1,0 +1,292 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmailAuth renders children when passed in 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <EmailAuth
+    email=""
+    match={
+      Object {
+        "params": Object {
+          "authType": "login",
+        },
+        "url": "/main/login",
+      }
+    }
+    submit={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <Styled(h1)>
+          Sign Up
+           with email
+        </Styled(h1)>,
+        <Styled(form)>
+          <Styled(input)
+            onChange={[Function]}
+            placeholder="email"
+            value=""
+          />
+          <Styled(input)
+            onChange={[Function]}
+            placeholder="password"
+            type="password"
+            value=""
+          />
+          <Styled(button)
+            className="css-1l21n03"
+            onClick={[Function]}
+          >
+            Begin Quest!
+          </Styled(button)>
+        </Styled(form)>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            "Sign Up",
+            " with email",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Sign Up",
+          " with email",
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <Styled(input)
+              onChange={[Function]}
+              placeholder="email"
+              value=""
+            />,
+            <Styled(input)
+              onChange={[Function]}
+              placeholder="password"
+              type="password"
+              value=""
+            />,
+            <Styled(button)
+              className="css-1l21n03"
+              onClick={[Function]}
+            >
+              Begin Quest!
+            </Styled(button)>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "onChange": [Function],
+              "placeholder": "email",
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "onChange": [Function],
+              "placeholder": "password",
+              "type": "password",
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Begin Quest!",
+              "className": "css-1l21n03",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Begin Quest!",
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <Styled(h1)>
+            Sign Up
+             with email
+          </Styled(h1)>,
+          <Styled(form)>
+            <Styled(input)
+              onChange={[Function]}
+              placeholder="email"
+              value=""
+            />
+            <Styled(input)
+              onChange={[Function]}
+              placeholder="password"
+              type="password"
+              value=""
+            />
+            <Styled(button)
+              className="css-1l21n03"
+              onClick={[Function]}
+            >
+              Begin Quest!
+            </Styled(button)>
+          </Styled(form)>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              "Sign Up",
+              " with email",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Sign Up",
+            " with email",
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <Styled(input)
+                onChange={[Function]}
+                placeholder="email"
+                value=""
+              />,
+              <Styled(input)
+                onChange={[Function]}
+                placeholder="password"
+                type="password"
+                value=""
+              />,
+              <Styled(button)
+                className="css-1l21n03"
+                onClick={[Function]}
+              >
+                Begin Quest!
+              </Styled(button)>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "onChange": [Function],
+                "placeholder": "email",
+                "value": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "onChange": [Function],
+                "placeholder": "password",
+                "type": "password",
+                "value": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Begin Quest!",
+                "className": "css-1l21n03",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Begin Quest!",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

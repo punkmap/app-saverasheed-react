@@ -1,0 +1,177 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal renders children when passed in 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Modal
+    allowLocation={[MockFunction]}
+    isLocationAllowed={true}
+    on={true}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "allowLocation": [MockFunction],
+      "children": <ScreenEffect
+        className="css-1hynkh6"
+        on={true}
+        onClick={[Function]}
+        showAnim={true}
+      >
+        <Styled(div)>
+          <Styled(div)
+            onClick={[Function]}
+          />
+        </Styled(div)>
+      </ScreenEffect>,
+      "isLocationAllowed": true,
+      "on": true,
+      "onClick": [Function],
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <Styled(div)>
+          <Styled(div)
+            onClick={[Function]}
+          />
+        </Styled(div)>,
+        "className": "css-1hynkh6",
+        "on": true,
+        "onClick": [Function],
+        "showAnim": true,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <Styled(div)
+            onClick={[Function]}
+          />,
+          "className": undefined,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": undefined,
+            "className": undefined,
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "allowLocation": [MockFunction],
+        "children": <ScreenEffect
+          className="css-1hynkh6"
+          on={true}
+          onClick={[Function]}
+          showAnim={true}
+        >
+          <Styled(div)>
+            <Styled(div)
+              onClick={[Function]}
+            />
+          </Styled(div)>
+        </ScreenEffect>,
+        "isLocationAllowed": true,
+        "on": true,
+        "onClick": [Function],
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": <Styled(div)>
+            <Styled(div)
+              onClick={[Function]}
+            />
+          </Styled(div)>,
+          "className": "css-1hynkh6",
+          "on": true,
+          "onClick": [Function],
+          "showAnim": true,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Styled(div)
+              onClick={[Function]}
+            />,
+            "className": undefined,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": undefined,
+              "className": undefined,
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

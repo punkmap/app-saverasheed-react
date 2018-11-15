@@ -1,0 +1,190 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AllowLocation renders children when passed in 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <AllowLocation
+    allowLocation={[MockFunction]}
+    isLocationAllowed={true}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <Styled(h1)>
+          Save Rasheed is a Geo dApp.
+        </Styled(h1)>,
+        <Styled(p)>
+          You'll need to allow location access to play the game!
+        </Styled(p)>,
+        <Styled(p)>
+          Please allow location access below.
+        </Styled(p)>,
+        <Styled(button)
+          className="css-6yi3vl"
+          onClick={[MockFunction]}
+        >
+          Allow
+        </Styled(button)>,
+      ],
+      "on": false,
+      "screenEffectClassName": "css-70qvj9",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "Save Rasheed is a Geo dApp.",
+        },
+        "ref": null,
+        "rendered": "Save Rasheed is a Geo dApp.",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "You'll need to allow location access to play the game!",
+        },
+        "ref": null,
+        "rendered": "You'll need to allow location access to play the game!",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "Please allow location access below.",
+        },
+        "ref": null,
+        "rendered": "Please allow location access below.",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "Allow",
+          "className": "css-6yi3vl",
+          "onClick": [MockFunction],
+        },
+        "ref": null,
+        "rendered": "Allow",
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <Styled(h1)>
+            Save Rasheed is a Geo dApp.
+          </Styled(h1)>,
+          <Styled(p)>
+            You'll need to allow location access to play the game!
+          </Styled(p)>,
+          <Styled(p)>
+            Please allow location access below.
+          </Styled(p)>,
+          <Styled(button)
+            className="css-6yi3vl"
+            onClick={[MockFunction]}
+          >
+            Allow
+          </Styled(button)>,
+        ],
+        "on": false,
+        "screenEffectClassName": "css-70qvj9",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Save Rasheed is a Geo dApp.",
+          },
+          "ref": null,
+          "rendered": "Save Rasheed is a Geo dApp.",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "You'll need to allow location access to play the game!",
+          },
+          "ref": null,
+          "rendered": "You'll need to allow location access to play the game!",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Please allow location access below.",
+          },
+          "ref": null,
+          "rendered": "Please allow location access below.",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Allow",
+            "className": "css-6yi3vl",
+            "onClick": [MockFunction],
+          },
+          "ref": null,
+          "rendered": "Allow",
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

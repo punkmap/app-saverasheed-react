@@ -1,0 +1,149 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ScreenEffect renders children when passed in 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ScreenEffect
+    on={false}
+  >
+    ScreenEffect
+  </ScreenEffect>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": <CSSTransition
+        classNames="css-yi9g2j"
+        in={false}
+        timeout={
+          Object {
+            "enter": 300,
+            "exit": 550,
+          }
+        }
+        unmountOnExit={true}
+      >
+        <React.Fragment>
+          ScreenEffect
+        </React.Fragment>
+      </CSSTransition>,
+      "className": "screen-effect-container",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <React.Fragment>
+          ScreenEffect
+        </React.Fragment>,
+        "classNames": "css-yi9g2j",
+        "in": false,
+        "timeout": Object {
+          "enter": 300,
+          "exit": 550,
+        },
+        "unmountOnExit": true,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": "ScreenEffect",
+        },
+        "ref": null,
+        "rendered": "ScreenEffect",
+        "type": Symbol(react.fragment),
+      },
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <CSSTransition
+          classNames="css-yi9g2j"
+          in={false}
+          timeout={
+            Object {
+              "enter": 300,
+              "exit": 550,
+            }
+          }
+          unmountOnExit={true}
+        >
+          <React.Fragment>
+            ScreenEffect
+          </React.Fragment>
+        </CSSTransition>,
+        "className": "screen-effect-container",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <React.Fragment>
+            ScreenEffect
+          </React.Fragment>,
+          "classNames": "css-yi9g2j",
+          "in": false,
+          "timeout": Object {
+            "enter": 300,
+            "exit": 550,
+          },
+          "unmountOnExit": true,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": "ScreenEffect",
+          },
+          "ref": null,
+          "rendered": "ScreenEffect",
+          "type": Symbol(react.fragment),
+        },
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

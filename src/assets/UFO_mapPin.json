@@ -1,0 +1,516 @@
+{
+  "frames": {
+    "UFO0000": {
+      "frame": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0001": {
+      "frame": { "x": 80, "y": 0, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0002": {
+      "frame": { "x": 160, "y": 0, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0003": {
+      "frame": { "x": 240, "y": 0, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0004": {
+      "frame": { "x": 320, "y": 0, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0005": {
+      "frame": { "x": 400, "y": 0, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0006": {
+      "frame": { "x": 480, "y": 0, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0007": {
+      "frame": { "x": 560, "y": 0, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0008": {
+      "frame": { "x": 640, "y": 0, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0009": {
+      "frame": { "x": 720, "y": 0, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0010": {
+      "frame": { "x": 800, "y": 0, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0011": {
+      "frame": { "x": 880, "y": 0, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0012": {
+      "frame": { "x": 0, "y": 107, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0013": {
+      "frame": { "x": 80, "y": 107, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0014": {
+      "frame": { "x": 160, "y": 107, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0015": {
+      "frame": { "x": 240, "y": 107, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0016": {
+      "frame": { "x": 320, "y": 107, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0017": {
+      "frame": { "x": 400, "y": 107, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0018": {
+      "frame": { "x": 480, "y": 107, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0019": {
+      "frame": { "x": 560, "y": 107, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0020": {
+      "frame": { "x": 640, "y": 107, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0021": {
+      "frame": { "x": 720, "y": 107, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0022": {
+      "frame": { "x": 800, "y": 107, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0023": {
+      "frame": { "x": 880, "y": 107, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0024": {
+      "frame": { "x": 0, "y": 214, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0025": {
+      "frame": { "x": 80, "y": 214, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0026": {
+      "frame": { "x": 160, "y": 214, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0027": {
+      "frame": { "x": 240, "y": 214, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0028": {
+      "frame": { "x": 320, "y": 214, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0029": {
+      "frame": { "x": 400, "y": 214, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0030": {
+      "frame": { "x": 480, "y": 214, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0031": {
+      "frame": { "x": 560, "y": 214, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0032": {
+      "frame": { "x": 640, "y": 214, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0033": {
+      "frame": { "x": 720, "y": 214, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0034": {
+      "frame": { "x": 800, "y": 214, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0035": {
+      "frame": { "x": 880, "y": 214, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0036": {
+      "frame": { "x": 0, "y": 321, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0037": {
+      "frame": { "x": 80, "y": 321, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0038": {
+      "frame": { "x": 160, "y": 321, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0039": {
+      "frame": { "x": 240, "y": 321, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0040": {
+      "frame": { "x": 320, "y": 321, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0041": {
+      "frame": { "x": 400, "y": 321, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0042": {
+      "frame": { "x": 480, "y": 321, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0043": {
+      "frame": { "x": 560, "y": 321, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0044": {
+      "frame": { "x": 640, "y": 321, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0045": {
+      "frame": { "x": 720, "y": 321, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0046": {
+      "frame": { "x": 800, "y": 321, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0047": {
+      "frame": { "x": 880, "y": 321, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0048": {
+      "frame": { "x": 0, "y": 428, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0049": {
+      "frame": { "x": 80, "y": 428, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0050": {
+      "frame": { "x": 160, "y": 428, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0051": {
+      "frame": { "x": 240, "y": 428, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0052": {
+      "frame": { "x": 320, "y": 428, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0053": {
+      "frame": { "x": 400, "y": 428, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0054": {
+      "frame": { "x": 480, "y": 428, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0055": {
+      "frame": { "x": 560, "y": 428, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0056": {
+      "frame": { "x": 640, "y": 428, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0057": {
+      "frame": { "x": 720, "y": 428, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0058": {
+      "frame": { "x": 800, "y": 428, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0059": {
+      "frame": { "x": 880, "y": 428, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0060": {
+      "frame": { "x": 0, "y": 535, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0061": {
+      "frame": { "x": 80, "y": 535, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0062": {
+      "frame": { "x": 160, "y": 535, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0063": {
+      "frame": { "x": 240, "y": 535, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0064": {
+      "frame": { "x": 320, "y": 535, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0065": {
+      "frame": { "x": 400, "y": 535, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0066": {
+      "frame": { "x": 480, "y": 535, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0067": {
+      "frame": { "x": 560, "y": 535, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0068": {
+      "frame": { "x": 640, "y": 535, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0069": {
+      "frame": { "x": 720, "y": 535, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0070": {
+      "frame": { "x": 800, "y": 535, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    },
+    "UFO0071": {
+      "frame": { "x": 880, "y": 535, "w": 80, "h": 107 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 80, "h": 107 },
+      "sourceSize": { "w": 80, "h": 107 }
+    }
+  },
+  "meta": {
+    "app": "Adobe Animate",
+    "version": "19.0.0.326",
+    "image": "UFO_mapPin.png",
+    "format": "RGBA8888",
+    "size": { "w": 1024, "h": 1024 },
+    "scale": "1"
+  }
+}

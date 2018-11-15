@@ -1,0 +1,929 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Profile renders children when passed in 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Profile
+    completedQuests={Array []}
+    logout={[MockFunction]}
+    pendingQuests={Array []}
+    user={
+      Object {
+        "activeQuest": "QmPKwbQSuraVkoJ31tyhRqgd8gqL1SRFNZHuULcdrjGH43",
+        "address": "0x204E3391dF22E7D25ebf2c9884dFE38Be4398A25",
+        "checkins": Object {
+          "QmPKwbQSuraVkoJ31tyhRqgd8gqL1SRFNZHuULcdrjGH43": Array [
+            Object {
+              "createdAt": "1540934679658",
+              "id": "poi.2360370",
+              "quadkey": "0230132212123123131300",
+            },
+            Object {
+              "createdAt": "1541011581077",
+              "id": "poi.2362169",
+              "quadkey": "0230132212123123023211",
+            },
+          ],
+        },
+        "displayName": "Rasheed Bustamam",
+        "email": "rasheed.bustamam@gmail.com",
+        "emailVerified": true,
+        "isAnonymous": false,
+        "photoURL": "https://graph.facebook.com/10155588132372213/picture",
+        "providerData": Array [
+          Object {
+            "displayName": "Rasheed Bustamam",
+            "email": "rasheed.bustamam@gmail.com",
+            "phoneNumber": null,
+            "photoURL": "https://graph.facebook.com/10155588132372213/picture",
+            "providerId": "facebook.com",
+            "uid": "10155588132372213",
+          },
+          Object {
+            "displayName": "Rasheed Bustamam",
+            "email": "rasheed.bustamam@gmail.com",
+            "phoneNumber": null,
+            "photoURL": "https://lh6.googleusercontent.com/-Y85aAuUNHy0/AAAAAAAAAAI/AAAAAAAAA6g/9GLltrJuc1U/photo.jpg",
+            "providerId": "google.com",
+            "uid": "109634673536241894918",
+          },
+          Object {
+            "displayName": "Rasheed Bustamam",
+            "email": "rasheed.bustamam@gmail.com",
+            "phoneNumber": null,
+            "photoURL": "https://graph.facebook.com/10155588132372213/picture",
+            "providerId": "password",
+            "uid": "rasheed.bustamam@gmail.com",
+          },
+          Object {
+            "displayName": null,
+            "email": "rasheed.bustamam@gmail.com",
+            "phoneNumber": null,
+            "photoURL": null,
+            "providerId": "portis",
+            "uid": "0x204E3391dF22E7D25ebf2c9884dFE38Be4398A25",
+          },
+        ],
+        "shownIntro": true,
+        "token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJodHRwczovL2lkZW50aXR5dG9vbGtpdC5nb29nbGVhcGlzLmNvbS9nb29nbGUuaWRlbnRpdHkuaWRlbnRpdHl0b29sa2l0LnYxLklkZW50aXR5VG9vbGtpdCIsImlhdCI6MTU0MDMzNzM1NSwiZXhwIjoxNTQwMzQwOTU1LCJpc3MiOiJ4eW8tbmV0d29yay0xNTIyODAwMDExODA0QGFwcHNwb3QuZ3NlcnZpY2VhY2NvdW50LmNvbSIsInN1YiI6Inh5by1uZXR3b3JrLTE1MjI4MDAwMTE4MDRAYXBwc3BvdC5nc2VydmljZWFjY291bnQuY29tIiwidWlkIjoiMHgyMDRlMzM5MWRmMjJlN2QyNWViZjJjOTg4NGRmZTM4YmU0Mzk4YTI1In0.gXqjj0WyNob5gAdaQL_8JTyWviOSDdP658s4QgPbTF51LWJYboPDLQs4En-AL0dgDkursz0ZcfvduGtTNndA51xeRtVQGW-lg4QqDPPG64lNckzn38a4Pr6y_Mp1FCEf0xHO75UCDTmWe9grmFdku1i1gdqs0YfAe29pao9NwAPRc03kcqCOQM05L7O_aV0uGsFHcGnT6z0lcsga5XY2f90O8cGB5KXEM8W2anUna1tzCOGlGQjOIhD8ax8AGNPOOFt2kkSnloE4Rl9QX_tEMxkFOQ9LR4De9kZ1wOLVU4fkICChzUYGnjSF4f8M4UQjNctfstJhMlguJZyFbMHenw",
+        "uid": "gDT8uhK31jfl3b9DjFMO6lb8KL33",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": <React.Fragment>
+        <Styled(div)>
+          <Styled(img)
+            alt="Rasheed Bustamam"
+            src="https://graph.facebook.com/10155588132372213/picture"
+          />
+          <div>
+            Rasheed Bustamam
+          </div>
+          <div>
+            rasheed.bustamam@gmail.com
+          </div>
+          <ButtonLink
+            btnClassName="css-17xknbj"
+            to="/profile/edit"
+          >
+            Edit Profile
+          </ButtonLink>
+        </Styled(div)>
+        <Styled(div)>
+          <Styled(h3)>
+            Stats
+          </Styled(h3)>
+          <div
+            className="css-19tl4xv"
+          >
+            <div>
+              Quests completed: 
+              0
+            </div>
+            <div>
+              Locations confirmed:
+               
+              2
+            </div>
+          </div>
+          <Styled(h3)>
+            Tokens
+          </Styled(h3)>
+          <div />
+          <Styled(div)>
+            <Styled(a)
+              href="https://etherscan.io/address/0x204E3391dF22E7D25ebf2c9884dFE38Be4398A25#tokentxnsErc721"
+              target="_blank"
+            >
+              <Styled(button)>
+                View Tokens on Etherscan
+              </Styled(button)>
+            </Styled(a)>
+            <Styled(button)
+              onClick={[MockFunction]}
+            >
+              Logout
+            </Styled(button)>
+          </Styled(div)>
+        </Styled(div)>
+      </React.Fragment>,
+      "title": "Profile",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <Styled(div)>
+            <Styled(img)
+              alt="Rasheed Bustamam"
+              src="https://graph.facebook.com/10155588132372213/picture"
+            />
+            <div>
+              Rasheed Bustamam
+            </div>
+            <div>
+              rasheed.bustamam@gmail.com
+            </div>
+            <ButtonLink
+              btnClassName="css-17xknbj"
+              to="/profile/edit"
+            >
+              Edit Profile
+            </ButtonLink>
+          </Styled(div)>,
+          <Styled(div)>
+            <Styled(h3)>
+              Stats
+            </Styled(h3)>
+            <div
+              className="css-19tl4xv"
+            >
+              <div>
+                Quests completed: 
+                0
+              </div>
+              <div>
+                Locations confirmed:
+                 
+                2
+              </div>
+            </div>
+            <Styled(h3)>
+              Tokens
+            </Styled(h3)>
+            <div />
+            <Styled(div)>
+              <Styled(a)
+                href="https://etherscan.io/address/0x204E3391dF22E7D25ebf2c9884dFE38Be4398A25#tokentxnsErc721"
+                target="_blank"
+              >
+                <Styled(button)>
+                  View Tokens on Etherscan
+                </Styled(button)>
+              </Styled(a)>
+              <Styled(button)
+                onClick={[MockFunction]}
+              >
+                Logout
+              </Styled(button)>
+            </Styled(div)>
+          </Styled(div)>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <Styled(img)
+                alt="Rasheed Bustamam"
+                src="https://graph.facebook.com/10155588132372213/picture"
+              />,
+              <div>
+                Rasheed Bustamam
+              </div>,
+              <div>
+                rasheed.bustamam@gmail.com
+              </div>,
+              <ButtonLink
+                btnClassName="css-17xknbj"
+                to="/profile/edit"
+              >
+                Edit Profile
+              </ButtonLink>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "alt": "Rasheed Bustamam",
+                "src": "https://graph.facebook.com/10155588132372213/picture",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Rasheed Bustamam",
+              },
+              "ref": null,
+              "rendered": "Rasheed Bustamam",
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "rasheed.bustamam@gmail.com",
+              },
+              "ref": null,
+              "rendered": "rasheed.bustamam@gmail.com",
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "btnClassName": "css-17xknbj",
+                "children": "Edit Profile",
+                "to": "/profile/edit",
+              },
+              "ref": null,
+              "rendered": "Edit Profile",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <Styled(h3)>
+                Stats
+              </Styled(h3)>,
+              <div
+                className="css-19tl4xv"
+              >
+                <div>
+                  Quests completed: 
+                  0
+                </div>
+                <div>
+                  Locations confirmed:
+                   
+                  2
+                </div>
+              </div>,
+              <Styled(h3)>
+                Tokens
+              </Styled(h3)>,
+              <div />,
+              <Styled(div)>
+                <Styled(a)
+                  href="https://etherscan.io/address/0x204E3391dF22E7D25ebf2c9884dFE38Be4398A25#tokentxnsErc721"
+                  target="_blank"
+                >
+                  <Styled(button)>
+                    View Tokens on Etherscan
+                  </Styled(button)>
+                </Styled(a)>
+                <Styled(button)
+                  onClick={[MockFunction]}
+                >
+                  Logout
+                </Styled(button)>
+              </Styled(div)>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Stats",
+              },
+              "ref": null,
+              "rendered": "Stats",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div>
+                    Quests completed: 
+                    0
+                  </div>,
+                  <div>
+                    Locations confirmed:
+                     
+                    2
+                  </div>,
+                ],
+                "className": "css-19tl4xv",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Quests completed: ",
+                      0,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Quests completed: ",
+                    0,
+                  ],
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Locations confirmed:",
+                      " ",
+                      2,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Locations confirmed:",
+                    " ",
+                    2,
+                  ],
+                  "type": "div",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Tokens",
+              },
+              "ref": null,
+              "rendered": "Tokens",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [],
+              },
+              "ref": null,
+              "rendered": Array [],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <Styled(a)
+                    href="https://etherscan.io/address/0x204E3391dF22E7D25ebf2c9884dFE38Be4398A25#tokentxnsErc721"
+                    target="_blank"
+                  >
+                    <Styled(button)>
+                      View Tokens on Etherscan
+                    </Styled(button)>
+                  </Styled(a)>,
+                  <Styled(button)
+                    onClick={[MockFunction]}
+                  >
+                    Logout
+                  </Styled(button)>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <Styled(button)>
+                      View Tokens on Etherscan
+                    </Styled(button)>,
+                    "href": "https://etherscan.io/address/0x204E3391dF22E7D25ebf2c9884dFE38Be4398A25#tokentxnsErc721",
+                    "target": "_blank",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "View Tokens on Etherscan",
+                    },
+                    "ref": null,
+                    "rendered": "View Tokens on Etherscan",
+                    "type": [Function],
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Logout",
+                    "onClick": [MockFunction],
+                  },
+                  "ref": null,
+                  "rendered": "Logout",
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": Symbol(react.fragment),
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <React.Fragment>
+          <Styled(div)>
+            <Styled(img)
+              alt="Rasheed Bustamam"
+              src="https://graph.facebook.com/10155588132372213/picture"
+            />
+            <div>
+              Rasheed Bustamam
+            </div>
+            <div>
+              rasheed.bustamam@gmail.com
+            </div>
+            <ButtonLink
+              btnClassName="css-17xknbj"
+              to="/profile/edit"
+            >
+              Edit Profile
+            </ButtonLink>
+          </Styled(div)>
+          <Styled(div)>
+            <Styled(h3)>
+              Stats
+            </Styled(h3)>
+            <div
+              className="css-19tl4xv"
+            >
+              <div>
+                Quests completed: 
+                0
+              </div>
+              <div>
+                Locations confirmed:
+                 
+                2
+              </div>
+            </div>
+            <Styled(h3)>
+              Tokens
+            </Styled(h3)>
+            <div />
+            <Styled(div)>
+              <Styled(a)
+                href="https://etherscan.io/address/0x204E3391dF22E7D25ebf2c9884dFE38Be4398A25#tokentxnsErc721"
+                target="_blank"
+              >
+                <Styled(button)>
+                  View Tokens on Etherscan
+                </Styled(button)>
+              </Styled(a)>
+              <Styled(button)
+                onClick={[MockFunction]}
+              >
+                Logout
+              </Styled(button)>
+            </Styled(div)>
+          </Styled(div)>
+        </React.Fragment>,
+        "title": "Profile",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <Styled(div)>
+              <Styled(img)
+                alt="Rasheed Bustamam"
+                src="https://graph.facebook.com/10155588132372213/picture"
+              />
+              <div>
+                Rasheed Bustamam
+              </div>
+              <div>
+                rasheed.bustamam@gmail.com
+              </div>
+              <ButtonLink
+                btnClassName="css-17xknbj"
+                to="/profile/edit"
+              >
+                Edit Profile
+              </ButtonLink>
+            </Styled(div)>,
+            <Styled(div)>
+              <Styled(h3)>
+                Stats
+              </Styled(h3)>
+              <div
+                className="css-19tl4xv"
+              >
+                <div>
+                  Quests completed: 
+                  0
+                </div>
+                <div>
+                  Locations confirmed:
+                   
+                  2
+                </div>
+              </div>
+              <Styled(h3)>
+                Tokens
+              </Styled(h3)>
+              <div />
+              <Styled(div)>
+                <Styled(a)
+                  href="https://etherscan.io/address/0x204E3391dF22E7D25ebf2c9884dFE38Be4398A25#tokentxnsErc721"
+                  target="_blank"
+                >
+                  <Styled(button)>
+                    View Tokens on Etherscan
+                  </Styled(button)>
+                </Styled(a)>
+                <Styled(button)
+                  onClick={[MockFunction]}
+                >
+                  Logout
+                </Styled(button)>
+              </Styled(div)>
+            </Styled(div)>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <Styled(img)
+                  alt="Rasheed Bustamam"
+                  src="https://graph.facebook.com/10155588132372213/picture"
+                />,
+                <div>
+                  Rasheed Bustamam
+                </div>,
+                <div>
+                  rasheed.bustamam@gmail.com
+                </div>,
+                <ButtonLink
+                  btnClassName="css-17xknbj"
+                  to="/profile/edit"
+                >
+                  Edit Profile
+                </ButtonLink>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "alt": "Rasheed Bustamam",
+                  "src": "https://graph.facebook.com/10155588132372213/picture",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Rasheed Bustamam",
+                },
+                "ref": null,
+                "rendered": "Rasheed Bustamam",
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "rasheed.bustamam@gmail.com",
+                },
+                "ref": null,
+                "rendered": "rasheed.bustamam@gmail.com",
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "btnClassName": "css-17xknbj",
+                  "children": "Edit Profile",
+                  "to": "/profile/edit",
+                },
+                "ref": null,
+                "rendered": "Edit Profile",
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <Styled(h3)>
+                  Stats
+                </Styled(h3)>,
+                <div
+                  className="css-19tl4xv"
+                >
+                  <div>
+                    Quests completed: 
+                    0
+                  </div>
+                  <div>
+                    Locations confirmed:
+                     
+                    2
+                  </div>
+                </div>,
+                <Styled(h3)>
+                  Tokens
+                </Styled(h3)>,
+                <div />,
+                <Styled(div)>
+                  <Styled(a)
+                    href="https://etherscan.io/address/0x204E3391dF22E7D25ebf2c9884dFE38Be4398A25#tokentxnsErc721"
+                    target="_blank"
+                  >
+                    <Styled(button)>
+                      View Tokens on Etherscan
+                    </Styled(button)>
+                  </Styled(a)>
+                  <Styled(button)
+                    onClick={[MockFunction]}
+                  >
+                    Logout
+                  </Styled(button)>
+                </Styled(div)>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Stats",
+                },
+                "ref": null,
+                "rendered": "Stats",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <div>
+                      Quests completed: 
+                      0
+                    </div>,
+                    <div>
+                      Locations confirmed:
+                       
+                      2
+                    </div>,
+                  ],
+                  "className": "css-19tl4xv",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "Quests completed: ",
+                        0,
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Quests completed: ",
+                      0,
+                    ],
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "Locations confirmed:",
+                        " ",
+                        2,
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Locations confirmed:",
+                      " ",
+                      2,
+                    ],
+                    "type": "div",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Tokens",
+                },
+                "ref": null,
+                "rendered": "Tokens",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [],
+                },
+                "ref": null,
+                "rendered": Array [],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    <Styled(a)
+                      href="https://etherscan.io/address/0x204E3391dF22E7D25ebf2c9884dFE38Be4398A25#tokentxnsErc721"
+                      target="_blank"
+                    >
+                      <Styled(button)>
+                        View Tokens on Etherscan
+                      </Styled(button)>
+                    </Styled(a)>,
+                    <Styled(button)
+                      onClick={[MockFunction]}
+                    >
+                      Logout
+                    </Styled(button)>,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <Styled(button)>
+                        View Tokens on Etherscan
+                      </Styled(button)>,
+                      "href": "https://etherscan.io/address/0x204E3391dF22E7D25ebf2c9884dFE38Be4398A25#tokentxnsErc721",
+                      "target": "_blank",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "View Tokens on Etherscan",
+                      },
+                      "ref": null,
+                      "rendered": "View Tokens on Etherscan",
+                      "type": [Function],
+                    },
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "Logout",
+                      "onClick": [MockFunction],
+                    },
+                    "ref": null,
+                    "rendered": "Logout",
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": Symbol(react.fragment),
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

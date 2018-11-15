@@ -1,0 +1,217 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QuestTitle renders children when passed in 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <QuestTitle
+    checkinHash=""
+    push={[MockFunction]}
+    quest={
+      Object {
+        "checkinButton": "Blast Em!",
+        "checkinCompletion": "Threat Eliminated",
+        "checkins": Array [
+          Object {
+            "description": "If you “peer” into the distance, you think you can see some more UFOs over the water… better move fast if you want to find Rasheed!",
+            "hint": "Take a stroll down the boardwalk",
+            "id": "poi.2362169",
+            "image": "QmXAgZMDo9JdTkG6L3t7aKGgV2eNEFUSvx5cm38wEYLUzD",
+            "name": "Broadway Pier",
+            "quadkeys": Array [
+              "0230132212123123023",
+              "0230132212123123201",
+              "0230132212123123023",
+            ],
+          },
+          Object {
+            "description": "You must not surrender to the aliens - Rasheed is unconditionally counting on you!",
+            "hint": "Better go in 60/40",
+            "id": "poi.2364557",
+            "image": "QmSp7wpJBaTFibcKqQ8HPgExx7nWr9ZmLEaBbvsfLjRXKd",
+            "name": "Unconditional Surrender Statue",
+            "quadkeys": Array [
+              "0230132212123300111",
+            ],
+          },
+          Object {
+            "description": "Built in 1863, this restored iron-hulled windjammer is now a secret-hideout \\"museum\\" for the XYO Network that occasionally sails across the stars and delivers crazy location data!!",
+            "hint": "Stand near star",
+            "id": "poi.2361903",
+            "image": "QmZsz4BJ4RPr7ZdnUUfZa34EFwDcrVdFHjh91yosd7zXYF",
+            "name": "Star of India",
+            "quadkeys": Array [
+              "0230132212123121023",
+              "0230132212123121201",
+              "0230132212123121210",
+              "0230132212123121032",
+            ],
+          },
+          Object {
+            "description": "It looks like there’s wet footprints along the concrete… Is Rasheed sleepbathing now too?!",
+            "hint": "Jump in to wake up!",
+            "id": "poi.2364970",
+            "image": "QmPP7bS1JmAF8b6JJ6MWX17oZkdtqBnPtQj3gaHcRDT4dP",
+            "name": "Waterfront Park Fountain",
+            "quadkeys": Array [
+              "0230132212123121012",
+              "0230132212123121010",
+              "0230132212123121011",
+              "0230132212123121013",
+            ],
+          },
+          Object {
+            "description": "Did you know that Rasheed once wandered onto the train and ended up all the way in La Jolla? Luckily, he swung by the local pancake place and got himself some breakfast before heading back home.",
+            "hint": "Look at it from across the street to get that picture.",
+            "id": "poi.2360370",
+            "image": "QmZ6M2EYpyG54oFgjvHfP91j5gZs7Vuo9Gn12noA7p7TZA",
+            "name": "Santa Fe Depot",
+            "quadkeys": Array [
+              "0230132212123123131",
+              "0230132212123123113",
+              "0230132212123132002",
+              "0230132212123132020",
+            ],
+          },
+        ],
+        "createdAt": "1537896650125",
+        "decentralized": false,
+        "description": "Save Rasheed (and his beerd) whilest he battles ALIENS and sleep walks through San Diego!",
+        "hash": "Q",
+        "id": "34300835732321530447673206707498306934859497509820544160359264568",
+        "image": "QmZaF9pNFGPthEJPvJV1J9C8J118mrQodt9xuSJxyRq4i9",
+        "inOrderCompletion": false,
+        "intro": "<p>A few months ago, Rasheed was on a geocache hike and he was abducted
+by aliens. Rasheed escaped, but not without being tested with
+radioactive materials beforehand! Rasheed made it back to Earth
+safely, but now his beard has grown quite a bit! It glows green when
+he is sleeping, and he occasionally sleepwalks. Sometimes, he will
+sleepwalk all the way across the state of California!
+</p>
+<p>
+Whenever he sleepwalks, aliens will arrive at his last known location;
+they still need to do more tests and want to abduct him again!
+</p>
+<p>Click the \\"Quest Log\\" below to view your first quest to Save Rasheed.</p>",
+        "name": "Save Rasheed - Spatial 2018",
+        "tokens": Array [
+          Object {
+            "image": "QmSCxy5dg7ckFDT9FPbPn7whJc6ZnfVZ8S5v7oyM9fdLV3",
+            "isDefault": true,
+            "name": "Default Token",
+          },
+          Object {
+            "endIndex": 300,
+            "image": "Qmf3zPM8x3bhtgUcHH2s1KmKX1VqLTFtYBjQQM798KyZcR",
+            "name": "Normal Token",
+            "startIndex": 30,
+          },
+          Object {
+            "endIndex": 30,
+            "image": "Qmc1Ptq3TC2kZa4Mywau8kCpLe6VJVzpgrusFvzKo2SF15",
+            "name": "Hat Token",
+            "startIndex": 10,
+          },
+          Object {
+            "endIndex": 9,
+            "image": "QmWXL1GkzQ4nPKg3M5UsN67DoDwNv97RkdzVb21D6kvhRv",
+            "name": "Shwag Token",
+            "startIndex": 0,
+          },
+        ],
+      }
+    }
+    userCheckins={Array []}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <Styled(h3)>
+          Save Rasheed - Spatial 2018
+        </Styled(h3)>,
+        false,
+      ],
+      "className": "css-1ixbp0l map-popup",
+      "onClick": [Function],
+      "popupWrapperClassName": "css-wpsrkq",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "Save Rasheed - Spatial 2018",
+        },
+        "ref": null,
+        "rendered": "Save Rasheed - Spatial 2018",
+        "type": [Function],
+      },
+      false,
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <Styled(h3)>
+            Save Rasheed - Spatial 2018
+          </Styled(h3)>,
+          false,
+        ],
+        "className": "css-1ixbp0l map-popup",
+        "onClick": [Function],
+        "popupWrapperClassName": "css-wpsrkq",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Save Rasheed - Spatial 2018",
+          },
+          "ref": null,
+          "rendered": "Save Rasheed - Spatial 2018",
+          "type": [Function],
+        },
+        false,
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

@@ -1,0 +1,571 @@
+{
+  "type": "FeatureCollection",
+  "query": [
+    "bars"
+  ],
+  "features": [
+    {
+      "id": "poi.6509096",
+      "type": "Feature",
+      "place_type": [
+        "poi"
+      ],
+      "relevance": 1,
+      "properties": {
+        "category": "bar, alcohol",
+        "landmark": true,
+        "maki": "bar"
+      },
+      "text": "Phantom Lounge & Nightclub",
+      "place_name": "Phantom Lounge & Nightclub, San Diego, California 92101, United States",
+      "matching_text": "Bars",
+      "matching_place_name": "Bars, San Diego, California 92101, United States",
+      "center": [
+        -117.16012,
+        32.716236
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.16012,
+          32.716236
+        ]
+      },
+      "context": [
+        {
+          "id": "neighborhood.292483",
+          "text": "Core-Columbia"
+        },
+        {
+          "id": "postcode.10691037413985540",
+          "text": "92101"
+        },
+        {
+          "id": "place.11741308809618150",
+          "wikidata": "Q16552",
+          "text": "San Diego"
+        },
+        {
+          "id": "region.3591",
+          "short_code": "US-CA",
+          "wikidata": "Q99",
+          "text": "California"
+        },
+        {
+          "id": "country.3145",
+          "short_code": "us",
+          "wikidata": "Q30",
+          "text": "United States"
+        }
+      ]
+    },
+    {
+      "id": "poi.31583558",
+      "type": "Feature",
+      "place_type": [
+        "poi"
+      ],
+      "relevance": 1,
+      "properties": {
+        "address": "1111 6th Ave",
+        "category": "bar, alcohol",
+        "landmark": true,
+        "maki": "bar"
+      },
+      "text": "BARmedia",
+      "place_name": "BARmedia, 1111 6th Ave, San Diego, California 92101, United States",
+      "matching_text": "Bars",
+      "matching_place_name": "Bars, 1111 6th Ave, San Diego, California 92101, United States",
+      "center": [
+        -117.15975,
+        32.717113
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.15975,
+          32.717113
+        ]
+      },
+      "context": [
+        {
+          "id": "neighborhood.292483",
+          "text": "Core-Columbia"
+        },
+        {
+          "id": "postcode.10691037413985540",
+          "text": "92101"
+        },
+        {
+          "id": "place.11741308809618150",
+          "wikidata": "Q16552",
+          "text": "San Diego"
+        },
+        {
+          "id": "region.3591",
+          "short_code": "US-CA",
+          "wikidata": "Q99",
+          "text": "California"
+        },
+        {
+          "id": "country.3145",
+          "short_code": "us",
+          "wikidata": "Q30",
+          "text": "United States"
+        }
+      ]
+    },
+    {
+      "id": "poi.31554654",
+      "type": "Feature",
+      "place_type": [
+        "poi"
+      ],
+      "relevance": 1,
+      "properties": {
+        "address": "1111 6th Ave",
+        "category": "bar, alcohol",
+        "landmark": true,
+        "maki": "bar"
+      },
+      "text": "Rami's Desk",
+      "place_name": "Rami's Desk, 1111 6th Ave, San Diego, California 92101, United States",
+      "matching_text": "Bars",
+      "matching_place_name": "Bars, 1111 6th Ave, San Diego, California 92101, United States",
+      "center": [
+        -117.15918,
+        32.71702
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.15918,
+          32.71702
+        ]
+      },
+      "context": [
+        {
+          "id": "neighborhood.292483",
+          "text": "Core-Columbia"
+        },
+        {
+          "id": "postcode.10691037413985540",
+          "text": "92101"
+        },
+        {
+          "id": "place.11741308809618150",
+          "wikidata": "Q16552",
+          "text": "San Diego"
+        },
+        {
+          "id": "region.3591",
+          "short_code": "US-CA",
+          "wikidata": "Q99",
+          "text": "California"
+        },
+        {
+          "id": "country.3145",
+          "short_code": "us",
+          "wikidata": "Q30",
+          "text": "United States"
+        }
+      ]
+    },
+    {
+      "id": "poi.6499216",
+      "type": "Feature",
+      "place_type": [
+        "poi"
+      ],
+      "relevance": 1,
+      "properties": {
+        "tel": "(619) 232-6141",
+        "address": "1055 1st Ave",
+        "category": "bar, alcohol",
+        "landmark": true,
+        "maki": "bar"
+      },
+      "text": "First Avenue Bar & Grille",
+      "place_name": "First Avenue Bar & Grille, 1055 1st Ave, San Diego, California 92101, United States",
+      "matching_text": "Bars",
+      "matching_place_name": "Bars, 1055 1st Ave, San Diego, California 92101, United States",
+      "center": [
+        -117.16386,
+        32.716488
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.16386,
+          32.716488
+        ]
+      },
+      "context": [
+        {
+          "id": "neighborhood.292483",
+          "text": "Core-Columbia"
+        },
+        {
+          "id": "postcode.10691037413985540",
+          "text": "92101"
+        },
+        {
+          "id": "place.11741308809618150",
+          "wikidata": "Q16552",
+          "text": "San Diego"
+        },
+        {
+          "id": "region.3591",
+          "short_code": "US-CA",
+          "wikidata": "Q99",
+          "text": "California"
+        },
+        {
+          "id": "country.3145",
+          "short_code": "us",
+          "wikidata": "Q30",
+          "text": "United States"
+        }
+      ]
+    },
+    {
+      "id": "poi.6509359",
+      "type": "Feature",
+      "place_type": [
+        "poi"
+      ],
+      "relevance": 1,
+      "properties": {
+        "tel": "(619) 232-0436",
+        "address": "702 Ash St. Suite. E",
+        "category": "bar, alcohol",
+        "landmark": true,
+        "maki": "bar"
+      },
+      "text": "SoleLuna Cafe",
+      "place_name": "SoleLuna Cafe, 702 Ash St. Suite. E, San Diego, California 92101, United States",
+      "matching_text": "Bars",
+      "matching_place_name": "Bars, 702 Ash St. Suite. E, San Diego, California 92101, United States",
+      "center": [
+        -117.15848,
+        32.719913
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.15848,
+          32.719913
+        ]
+      },
+      "context": [
+        {
+          "id": "neighborhood.292146",
+          "text": "Cortez Hill"
+        },
+        {
+          "id": "postcode.10691037413985540",
+          "text": "92101"
+        },
+        {
+          "id": "place.11741308809618150",
+          "wikidata": "Q16552",
+          "text": "San Diego"
+        },
+        {
+          "id": "region.3591",
+          "short_code": "US-CA",
+          "wikidata": "Q99",
+          "text": "California"
+        },
+        {
+          "id": "country.3145",
+          "short_code": "us",
+          "wikidata": "Q30",
+          "text": "United States"
+        }
+      ]
+    },
+    {
+      "id": "poi.6500193",
+      "type": "Feature",
+      "place_type": [
+        "poi"
+      ],
+      "relevance": 1,
+      "properties": {
+        "address": "",
+        "category": "bar, alcohol",
+        "landmark": true,
+        "maki": "bar"
+      },
+      "text": "Boomers Den",
+      "place_name": "Boomers Den, San Diego, California 92101, United States",
+      "matching_text": "Bars",
+      "matching_place_name": "Bars, San Diego, California 92101, United States",
+      "center": [
+        -117.16737,
+        32.72012
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.16737,
+          32.72012
+        ]
+      },
+      "context": [
+        {
+          "id": "neighborhood.289376",
+          "text": "Little Italy"
+        },
+        {
+          "id": "postcode.10691037413985540",
+          "text": "92101"
+        },
+        {
+          "id": "place.11741308809618150",
+          "wikidata": "Q16552",
+          "text": "San Diego"
+        },
+        {
+          "id": "region.3591",
+          "short_code": "US-CA",
+          "wikidata": "Q99",
+          "text": "California"
+        },
+        {
+          "id": "country.3145",
+          "short_code": "us",
+          "wikidata": "Q30",
+          "text": "United States"
+        }
+      ]
+    },
+    {
+      "id": "poi.6505297",
+      "type": "Feature",
+      "place_type": [
+        "poi"
+      ],
+      "relevance": 1,
+      "properties": {
+        "tel": "(619) 269-2202",
+        "address": "675 W Beech St",
+        "category": "bar, alcohol",
+        "landmark": true,
+        "maki": "bar"
+      },
+      "text": "Craft & Commerce",
+      "place_name": "Craft & Commerce, 675 W Beech St, San Diego, California 92101, United States",
+      "matching_text": "Bars",
+      "matching_place_name": "Bars, 675 W Beech St, San Diego, California 92101, United States",
+      "center": [
+        -117.168976,
+        32.72088
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.168976,
+          32.72088
+        ]
+      },
+      "context": [
+        {
+          "id": "neighborhood.289376",
+          "text": "Little Italy"
+        },
+        {
+          "id": "postcode.10691037413985540",
+          "text": "92101"
+        },
+        {
+          "id": "place.11741308809618150",
+          "wikidata": "Q16552",
+          "text": "San Diego"
+        },
+        {
+          "id": "region.3591",
+          "short_code": "US-CA",
+          "wikidata": "Q99",
+          "text": "California"
+        },
+        {
+          "id": "country.3145",
+          "short_code": "us",
+          "wikidata": "Q30",
+          "text": "United States"
+        }
+      ]
+    },
+    {
+      "id": "poi.6495690",
+      "type": "Feature",
+      "place_type": [
+        "poi"
+      ],
+      "relevance": 1,
+      "properties": {
+        "address": "1179 Pacific Hwy, San Diego, CA 92101",
+        "category": "bar, alcohol",
+        "landmark": true,
+        "maki": "bar"
+      },
+      "text": "Palace Vista",
+      "place_name": "Palace Vista, 1179 Pacific Hwy, San Diego, CA 92101, San Diego, California 92101, United States",
+      "matching_text": "Bars",
+      "matching_place_name": "Bars, 1179 Pacific Hwy, San Diego, CA 92101, San Diego, California 92101, United States",
+      "center": [
+        -117.170876,
+        32.717632
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.170876,
+          32.717632
+        ]
+      },
+      "context": [
+        {
+          "id": "neighborhood.292483",
+          "text": "Core-Columbia"
+        },
+        {
+          "id": "postcode.10691037413985540",
+          "text": "92101"
+        },
+        {
+          "id": "place.11741308809618150",
+          "wikidata": "Q16552",
+          "text": "San Diego"
+        },
+        {
+          "id": "region.3591",
+          "short_code": "US-CA",
+          "wikidata": "Q99",
+          "text": "California"
+        },
+        {
+          "id": "country.3145",
+          "short_code": "us",
+          "wikidata": "Q30",
+          "text": "United States"
+        }
+      ]
+    },
+    {
+      "id": "poi.6507080",
+      "type": "Feature",
+      "place_type": [
+        "poi"
+      ],
+      "relevance": 1,
+      "properties": {
+        "address": "1670 Kettner Blvd",
+        "category": "bar, alcohol",
+        "landmark": true,
+        "maki": "bar"
+      },
+      "text": "K Hole",
+      "place_name": "K Hole, 1670 Kettner Blvd, San Diego, California 92101, United States",
+      "matching_text": "Bars",
+      "matching_place_name": "Bars, 1670 Kettner Blvd, San Diego, California 92101, United States",
+      "center": [
+        -117.169556,
+        32.722473
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.169556,
+          32.722473
+        ]
+      },
+      "context": [
+        {
+          "id": "neighborhood.293238",
+          "text": "Harborview"
+        },
+        {
+          "id": "postcode.10691037413985540",
+          "text": "92101"
+        },
+        {
+          "id": "place.11741308809618150",
+          "wikidata": "Q16552",
+          "text": "San Diego"
+        },
+        {
+          "id": "region.3591",
+          "short_code": "US-CA",
+          "wikidata": "Q99",
+          "text": "California"
+        },
+        {
+          "id": "country.3145",
+          "short_code": "us",
+          "wikidata": "Q30",
+          "text": "United States"
+        }
+      ]
+    },
+    {
+      "id": "poi.6506984",
+      "type": "Feature",
+      "place_type": [
+        "poi"
+      ],
+      "relevance": 1,
+      "properties": {
+        "address": "1670 Kettner Blvd",
+        "category": "bar, alcohol",
+        "landmark": true,
+        "maki": "bar"
+      },
+      "text": "Don Juan",
+      "place_name": "Don Juan, 1670 Kettner Blvd, San Diego, California 92101, United States",
+      "matching_text": "Bars",
+      "matching_place_name": "Bars, 1670 Kettner Blvd, San Diego, California 92101, United States",
+      "center": [
+        -117.16951,
+        32.722576
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.16951,
+          32.722576
+        ]
+      },
+      "context": [
+        {
+          "id": "neighborhood.293238",
+          "text": "Harborview"
+        },
+        {
+          "id": "postcode.10691037413985540",
+          "text": "92101"
+        },
+        {
+          "id": "place.11741308809618150",
+          "wikidata": "Q16552",
+          "text": "San Diego"
+        },
+        {
+          "id": "region.3591",
+          "short_code": "US-CA",
+          "wikidata": "Q99",
+          "text": "California"
+        },
+        {
+          "id": "country.3145",
+          "short_code": "us",
+          "wikidata": "Q30",
+          "text": "United States"
+        }
+      ]
+    }
+  ],
+  "attribution": "NOTICE: © 2018 Mapbox and its suppliers. All rights reserved. Use of this data is subject to the Mapbox Terms of Service (https://www.mapbox.com/about/maps/). This response and the information it contains may not be retained. POI(s) provided by Foursquare."
+}

@@ -1,0 +1,204 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LinkExistingAccount renders children when passed in 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <LinkExistingAccount
+    email="rasheed.bustamam@gmail.com"
+    linkAccount={[MockFunction]}
+    method="facebook.com"
+    pendingCredId="google.com"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <Styled(h1)>
+          Account Exists
+        </Styled(h1)>,
+        <div>
+          An account with the email 
+          rasheed.bustamam@gmail.com
+           exists with 
+          facebook.com
+          . Do you want to link this account with 
+          google.com
+          ?
+        </div>,
+        <Styled(button)
+          className="css-kz4gx8"
+          onClick={[MockFunction]}
+        >
+          Link Account
+        </Styled(button)>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "Account Exists",
+        },
+        "ref": null,
+        "rendered": "Account Exists",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "An account with the email ",
+            "rasheed.bustamam@gmail.com",
+            " exists with ",
+            "facebook.com",
+            ". Do you want to link this account with ",
+            "google.com",
+            "?",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "An account with the email ",
+          "rasheed.bustamam@gmail.com",
+          " exists with ",
+          "facebook.com",
+          ". Do you want to link this account with ",
+          "google.com",
+          "?",
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "Link Account",
+          "className": "css-kz4gx8",
+          "onClick": [MockFunction],
+        },
+        "ref": null,
+        "rendered": "Link Account",
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <Styled(h1)>
+            Account Exists
+          </Styled(h1)>,
+          <div>
+            An account with the email 
+            rasheed.bustamam@gmail.com
+             exists with 
+            facebook.com
+            . Do you want to link this account with 
+            google.com
+            ?
+          </div>,
+          <Styled(button)
+            className="css-kz4gx8"
+            onClick={[MockFunction]}
+          >
+            Link Account
+          </Styled(button)>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Account Exists",
+          },
+          "ref": null,
+          "rendered": "Account Exists",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "An account with the email ",
+              "rasheed.bustamam@gmail.com",
+              " exists with ",
+              "facebook.com",
+              ". Do you want to link this account with ",
+              "google.com",
+              "?",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "An account with the email ",
+            "rasheed.bustamam@gmail.com",
+            " exists with ",
+            "facebook.com",
+            ". Do you want to link this account with ",
+            "google.com",
+            "?",
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Link Account",
+            "className": "css-kz4gx8",
+            "onClick": [MockFunction],
+          },
+          "ref": null,
+          "rendered": "Link Account",
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
