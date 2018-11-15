@@ -1,14 +1,15 @@
 import * as Sentry from '@sentry/browser'
-import { filter, pipe, map } from 'ramda'
+import { filter, pipe, map, endsWith } from 'ramda'
 import { createStore, applyMiddleware, compose, combineReducers } from 'redux'
 import thunkMiddleware from 'redux-thunk'
 import { createBrowserHistory } from 'history'
 import { connectRouter, push, routerMiddleware } from 'connected-react-router'
 import { createDataLoaderMiddleware } from 'redux-dataloader'
+import { toast } from 'react-toastify'
 
 import XYAccount from '../lib/xy-account'
 import { injectWeb3 } from '../util/web3'
-import { authenticateUser } from './auth/middleware'
+import { authenticateUser } from './auth/dataloaders'
 import { initAppRequest } from './common/actions'
 import reducers from './reducers'
 import middlewares from './middlewares'
@@ -31,16 +32,27 @@ const logger = store => next => action => {
   return result
 }
 
+let errorToastId
+
+const errorHandler = (action, state, error) => {
+  if (errorToastId) toast.dismiss(errorToastId)
+  errorToastId = toast.error(error)
+  Sentry.withScope(scope => {
+    scope.setExtra('action', action)
+    scope.setExtra('state', state)
+    Sentry.captureException(error)
+  })
+}
+
 const crashReporter = store => next => action => {
   try {
+    if (endsWith('FAILURE', action.type)) {
+      errorHandler(action, store.getState(), action.payload)
+    }
     return next(action)
   } catch (err) {
     console.error('Caught an exception!', err)
-    Sentry.withScope(scope => {
-      scope.setExtra('action', action)
-      scope.setExtra('state', store.getState())
-      Sentry.captureException(err)
-    })
+    errorHandler(action, store.getState(), err)
     throw err
   }
 }
@@ -91,7 +103,7 @@ const configureStore = (initialState = {}, options) => {
     if (user) {
       // user is signed in
       console.log('signed in!')
-      authenticateUser(store, user)
+      authenticateUser(user, store.dispatch)
     } else {
       // user is signed out
       store.dispatch(push('/main'))

@@ -13,9 +13,8 @@ import {
   pipe,
   append,
 } from 'ramda'
-import { toast } from 'react-toastify'
-import { loadState } from '../../util/localStorage'
 
+import { loadState } from '../../util/localStorage'
 import { containsBy, opposite } from '../../util/ramda-extra'
 
 import {
@@ -51,13 +50,8 @@ export const handleSetLoading = assoc('loading', true)
 export const handleAuthenticateSuccess = (state, { payload: { user } }) =>
   mergeDeepRight(state, { user, loading: false, hideIntro: false })
 
-let errorToastId
-
-export const handleAuthenticateFailure = (state, { payload: { error } }) => {
-  if (errorToastId) toast.dismiss(errorToastId)
-  errorToastId = toast.error(error)
-  return assoc('error', error, state)
-}
+export const handleAuthenticateFailure = (state, { payload: { error } }) =>
+  assoc('error', error, state)
 
 export const handleUpdateLinkedAccount = (state, { payload }) =>
   merge(state, { ...payload, loading: false })
@@ -189,12 +183,7 @@ export const handleCompleteQuestSuccess = (
     }),
   })(state)
 
-const handleCompleteQuestFailure = (state, { payload: { error } }) => {
-  if (errorToastId) toast.dismiss(errorToastId)
-  errorToastId = toast.error(error)
-  // no need to mutate state
-  return state
-}
+const handleCompleteQuestFailure = (state, { payload: { error } }) => state
 
 const handlers = {
   [AUTHENTICATE_REQUEST]: handleSetLoading,
