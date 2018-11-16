@@ -5,7 +5,11 @@ import {
   completeQuestRequest,
   linkAccountRequest,
 } from '../modules/auth/actions'
-import { getLinkingProvider, getUserAddress } from '../modules/auth/selectors'
+import {
+  getLinkingProvider,
+  getPendingCompletion,
+  getUserAddress,
+} from '../modules/auth/selectors'
 import { getQuery } from '../modules/common/selectors'
 import { getIsLoading, getQuestWithStatus } from '../modules/quest/selectors'
 import { subscribe } from '../util/reselect'
@@ -16,6 +20,7 @@ const mapStateToProps = subscribe({
   getQuestWithStatus,
   getUserAddress,
   getLinkingProvider,
+  getPendingCompletion,
 })
 
 const actions = {
