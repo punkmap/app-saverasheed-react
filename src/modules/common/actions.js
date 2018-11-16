@@ -32,10 +32,29 @@ const { types: apiTypes, creators: apiCreators } = createApiActions(
     initApp: {
       failure: ['error'],
     },
+    nextStep: {
+      request: ['currentStep'],
+      success: ['nextStep'],
+      failure: ['error'],
+    },
   },
   { prefix: 'common/', useLoader: true },
 )
 
-export const { INIT_APP_REQUEST, INIT_APP_SUCCESS, INIT_APP_FAILURE } = apiTypes
+export const {
+  INIT_APP_REQUEST,
+  INIT_APP_SUCCESS,
+  INIT_APP_FAILURE,
+  NEXT_STEP_REQUEST,
+  NEXT_STEP_SUCCESS,
+  NEXT_STEP_FAILURE,
+} = apiTypes
 
-export const { initAppRequest, initAppSuccess, initAppFailure } = apiCreators
+export const {
+  initAppRequest,
+  initAppSuccess,
+  initAppFailure,
+  nextStepRequest,
+  nextStepSuccess,
+  nextStepFailure,
+} = apiCreators

@@ -24,6 +24,7 @@ import { COMPLETED } from '../../fixtures/quests'
 import { getProviderById } from '../../fixtures/authProviders'
 import { saveState } from '../../util/localStorage'
 import { subscribe } from '../../util/reselect'
+import { nextStepSuccess } from '../common/actions'
 import { getQuestWithStatus, getActiveQuestHash } from '../quest/selectors'
 import {
   LINK_EXISTING_ACCOUNT_REQUEST,
@@ -37,7 +38,6 @@ import {
   CONFIRM_CHECKIN_REQUEST,
   confirmCheckinSuccess,
   confirmCheckinFailure,
-  FETCH_USER_DATA_SUCCESS,
   LOGOUT_REQUEST,
   logoutFailure,
   logoutSuccess,
@@ -492,11 +492,12 @@ const unlinkAccountLoader = createLoader(
 const shownIntroLoader = createLoader(
   SHOWN_INTRO_REQUEST,
   {
-    fetch: async ({ xya }) => {
+    fetch: async ({ xya, dispatch }) => {
       await xya.updateUser({
         shownIntro: true,
       })
       saveState('shownIntro', true)
+      dispatch(nextStepSuccess(0))
       return true
     },
     success: shownIntroSuccess,

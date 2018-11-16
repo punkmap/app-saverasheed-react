@@ -1,8 +1,9 @@
 import { connect } from 'react-redux'
 import { push } from 'connected-react-router'
 import { shownIntroRequest } from '../modules/auth/actions'
+import { nextStepRequest } from '../modules/common/actions'
 
-import { getPathname } from '../modules/common/selectors'
+import { getIntroStep, getPathname } from '../modules/common/selectors'
 import { getViewportHeight } from '../modules/map/selectors'
 import { selectQuestRequest } from '../modules/quest/actions'
 import { getQuests } from '../modules/quest/selectors'
@@ -13,12 +14,14 @@ const mapStateToProps = subscribe({
   getViewportHeight,
   getPathname,
   getQuests,
+  getIntroStep,
 })
 
 const actions = {
   push,
   selectQuest: selectQuestRequest,
   shownIntro: shownIntroRequest,
+  nextStep: nextStepRequest,
 }
 
 export default connect(

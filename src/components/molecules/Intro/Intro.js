@@ -7,7 +7,7 @@ import { isFunction, sleep } from '../../../util/ramda-extra'
 import Button from '../../atoms/Button/Button'
 import Modal, { ModalP, ModalTitle } from '../Modal/Modal'
 
-const { func, arrayOf, bool } = PropTypes
+const { func, arrayOf, bool, number } = PropTypes
 
 const pulse = keyframes`
   0% {
@@ -47,6 +47,7 @@ const floaterBodyCx = css({
 
 const screenEffectCx = css({
   maxHeight: '100%',
+  pointerEvents: 'none',
 })
 
 const makeScreenEffectCx = styles => css(styles)
@@ -82,7 +83,8 @@ const steps = [
         </P>
       </Fragment>
     ),
-    to: '/quest-log',
+    onClick: ({ push }) => push('/quest-log'),
+    // to: '/quest-log',
     textAlign: 'start',
     target: '#bottom-nav-quest-log',
   },
@@ -105,7 +107,8 @@ const steps = [
         know where to go to Save Rasheed. Click "Map" to see them!
       </P>
     ),
-    to: '/',
+    // to: '/',
+    onClick: ({ push }) => push('/'),
     target: '#bottom-nav-',
     top: 'calc(100% - 200px)',
   },
@@ -180,6 +183,7 @@ class Intro extends Component {
     selectQuest: func.isRequired,
     quests: arrayOf(questPropTypes),
     run: bool,
+    introStep: number.isRequired,
   }
 
   async componentDidUpdate(oldProps) {
@@ -193,37 +197,21 @@ class Intro extends Component {
     }
   }
 
-  start = () => this.setState({ run: true, stepIndex: 0 })
-
   stop = e => {
     e.stopPropagation()
     this.props.shownIntro()
-    setTimeout(() => {
-      this.setState({
-        // run: false,
-        stepIndex: 0,
-      })
-    }, 1000) // just wait for shownIntro to complete
   }
 
   handleNext = () => {
-    const { push, selectQuest, quests } = this.props
-    const { stepIndex } = this.state
-    if (stepIndex >= steps.length) return null
-    const { to, onClick } = steps[stepIndex]
-    if (to) {
-      push(to)
-    }
-    if (onClick) {
-      onClick({ push, selectQuest: () => selectQuest(quests[0]) })
-    }
-    this.setState({ stepIndex: stepIndex + 1 })
+    const { nextStep, introStep } = this.props
+    if (introStep >= steps.length) return null
+    return nextStep(introStep)
   }
 
   renderFloater = () => {
-    const { stepIndex } = this.state
-    if (stepIndex >= steps.length) return null
-    const step = steps[stepIndex]
+    const { introStep } = this.props
+    if (introStep >= steps.length) return null
+    const step = steps[introStep]
     const { content, textAlign = 'center', top, bottom } = step
     if (!content) return null
 
@@ -241,6 +229,7 @@ class Intro extends Component {
             bottom,
           }),
         )}
+        onOverlayClick={this.handleNext}
         onClick={this.handleNext}
       >
         {isFunction(content) ? content({ stop: this.stop }) : content}
@@ -249,9 +238,10 @@ class Intro extends Component {
   }
 
   renderBeacon = () => {
-    const { stepIndex, showBeacon } = this.state
-    if (!showBeacon || stepIndex >= steps.length) return null
-    const { target } = steps[stepIndex]
+    const { introStep } = this.props
+    const { showBeacon } = this.state
+    if (!showBeacon || introStep >= steps.length) return null
+    const { target } = steps[introStep]
     if (!target) return null
     const rect = getTargetRect(target)
     if (!rect) return null
@@ -273,12 +263,11 @@ class Intro extends Component {
   }
 
   render() {
-    // const { run } = this.state
     const { run } = this.props
     if (!run) return null
     return (
       <Root className="intro">
-        <Body>
+        <Body onClick={this.handleNext}>
           {this.renderFloater()}
           {this.renderBeacon()}
         </Body>

@@ -40,7 +40,7 @@ import {
 
 export const initialState = {
   loading: false,
-  user: { shownIntro: false },
+  user: { shownIntro: true },
   showingIntro: false,
   hideIntro: true,
 }
