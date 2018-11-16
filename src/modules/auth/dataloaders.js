@@ -187,14 +187,10 @@ const completeQuestDataLoader = createLoader(
       })
       const { earnedToken, checkinProofsHash } = result
       if (earnedToken) {
-        /*
-          checkinProofsHash: "QmYxgipnYucKe6g7DYQUMsmz5H74prYHCAh5B5PrHkZuyp"
-          earnedToken: true
-          transactionHash: "0x72c4d6b13d07475fca29070bbe52e5f5882cdf2169809b918caffc4a95a52125"
-         */
         const { data: checkinProofs } = await axios.get(
           `${xyoIpfsUrl}/${checkinProofsHash}`,
         )
+        toast('Quest complete! Visit your profile to view your token!')
         return checkinProofs
       } else {
         throw new Error('You already got this token!')

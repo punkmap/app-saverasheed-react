@@ -14,6 +14,7 @@ export const getMethod = derive(rootSelector, prop('method'))
 export const getShowingIntro = derive(rootSelector, prop('showingIntro'))
 export const getHasUserSeenIntro = derive(getUser, prop('shownIntro'))
 export const getHideIntro = derive(rootSelector, prop('hideIntro'))
+export const getPendingCompletion = derive(rootSelector, prop('pendingCompletion'))
 export const getShowIntro = derive(
   [getIsLoading, getHideIntro, getHasUserSeenIntro, getShowingIntro],
   (isLoading, hideIntro, hasUserSeenIntro, showingIntro) =>
