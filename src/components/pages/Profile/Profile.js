@@ -17,7 +17,7 @@ import { ButtonLink } from '../../atoms/ButtonLink'
 import MenuPage from '../../templates/MenuPage'
 import profile from '../../../assets/UI_NAV_Btn-Profile.svg'
 
-const { func, arrayOf } = PropTypes
+const { func, arrayOf, string } = PropTypes
 
 const {
   palette: {
@@ -96,6 +96,7 @@ class Profile extends Component {
     pendingQuests: arrayOf(questPropTypes),
     completedQuests: arrayOf(completedQuestPropTypes),
     logout: func.isRequired,
+    checkinHash: string,
   }
 
   render() {
@@ -104,6 +105,8 @@ class Profile extends Component {
       logout,
       pendingQuests,
       completedQuests,
+      push,
+      checkinHash,
       ...props
     } = this.props
     // console.log({ pendingQuests, completedQuests })
@@ -150,6 +153,17 @@ class Profile extends Component {
               <SectionHeading>Tokens</SectionHeading>
               <div>
                 {map(
+                  ({ tokens, id, name }) => (
+                    <Token
+                      key={id}
+                      alt={name}
+                      src={`${baseIpfsUrl}/${tokens[0].image}`}
+                      onClick={() => push(`/complete-quest/${checkinHash}`)}
+                    />
+                  ),
+                  pendingQuests,
+                )}
+                {map(
                   ({ questData, token: { name, image } }) => (
                     <Token
                       key={questData}
@@ -165,7 +179,7 @@ class Profile extends Component {
                   <A
                     href={`https://etherscan.io/address/${
                       user.address
-                    }#tokentxnsErc721`}
+                      }#tokentxnsErc721`}
                     target="_blank"
                   >
                     <EtherScanButton>View Tokens on Etherscan</EtherScanButton>

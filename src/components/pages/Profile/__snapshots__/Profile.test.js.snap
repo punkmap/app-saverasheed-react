@@ -415,7 +415,10 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": Array [],
+                "children": Array [
+                  Array [],
+                  Array [],
+                ],
               },
               "ref": null,
               "rendered": Array [],
@@ -830,7 +833,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": Array [],
+                  "children": Array [
+                    Array [],
+                    Array [],
+                  ],
                 },
                 "ref": null,
                 "rendered": Array [],
