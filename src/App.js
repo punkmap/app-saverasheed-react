@@ -125,20 +125,6 @@ class App extends Component {
           <Loading />
         ) : (
           <Fragment>
-            <Route
-              path="/"
-              render={({ match, location: { pathname } }) => {
-                if (startsWith('/main', pathname)) {
-                  return null
-                }
-
-                return isLoggedIn ? (
-                  <AsyncHome isExact={match.isExact} />
-                ) : (
-                  <Redirect to="/main" exact from="/" />
-                )
-              }}
-            />
             <Switch>
               <Route path="/main" component={AsyncMain} />
               <Route path="/profile" exact component={AsyncProfile} />
@@ -160,6 +146,20 @@ class App extends Component {
                 component={AsyncQuestRoute}
               />
             </Switch>
+            <Route
+              path="/"
+              render={({ match, location: { pathname } }) => {
+                if (startsWith('/main', pathname)) {
+                  return null
+                }
+
+                return isLoggedIn ? (
+                  <AsyncHome isExact={match.isExact} />
+                ) : (
+                  <Redirect to="/main" exact from="/" />
+                )
+              }}
+            />
             {/*{isLoggedIn && showIntro && <Intro />}*/}
             <Intro run={isLoggedIn && showIntro} />
           </Fragment>

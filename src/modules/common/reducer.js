@@ -13,6 +13,9 @@ import {
   INIT_APP_REQUEST,
   INIT_APP_SUCCESS,
   INIT_APP_FAILURE,
+  // NEXT_STEP_REQUEST,
+  NEXT_STEP_SUCCESS,
+  // NEXT_STEP_FAILURE,
 } from './actions'
 
 export const initialState = {
@@ -21,6 +24,7 @@ export const initialState = {
   // default to not showing splash
   showingSplash: !loadState('splashShown'),
   appLoading: true,
+  introStep: 0,
 }
 
 export const handleToggleFullScreen = evolve({ fullScreen: not })
@@ -40,6 +44,9 @@ export const handleInitAppFailure = (state, { payload: { error } }) =>
     assoc('error', error),
   )(state)
 
+export const handleNextStepSuccess = (
+  state, { payload: { nextStep } }) => assoc('introStep', nextStep, state)
+
 const handlers = {
   [TOGGLE_FULL_SCREEN]: handleToggleFullScreen,
   [REQUEST_FULL_SCREEN]: handleRequestFullScreen,
@@ -49,6 +56,7 @@ const handlers = {
   [INIT_APP_REQUEST]: handleInitAppRequest,
   [INIT_APP_SUCCESS]: handleInitAppSuccess,
   [INIT_APP_FAILURE]: handleInitAppFailure,
+  [NEXT_STEP_SUCCESS]: handleNextStepSuccess,
 }
 
 export default createReducer(initialState, handlers)
