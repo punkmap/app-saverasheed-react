@@ -24,6 +24,7 @@ import { COMPLETED } from '../../fixtures/quests'
 import { getProviderById } from '../../fixtures/authProviders'
 import { saveState } from '../../util/localStorage'
 import { subscribe } from '../../util/reselect'
+import { nextStepSuccess } from '../common/actions'
 import { getQuestWithStatus, getActiveQuestHash } from '../quest/selectors'
 import {
   LINK_EXISTING_ACCOUNT_REQUEST,
@@ -37,7 +38,6 @@ import {
   CONFIRM_CHECKIN_REQUEST,
   confirmCheckinSuccess,
   confirmCheckinFailure,
-  // FETCH_USER_DATA_SUCCESS,
   LOGOUT_REQUEST,
   logoutFailure,
   logoutSuccess,
@@ -187,14 +187,10 @@ const completeQuestDataLoader = createLoader(
       })
       const { earnedToken, checkinProofsHash } = result
       if (earnedToken) {
-        /*
-          checkinProofsHash: "QmYxgipnYucKe6g7DYQUMsmz5H74prYHCAh5B5PrHkZuyp"
-          earnedToken: true
-          transactionHash: "0x72c4d6b13d07475fca29070bbe52e5f5882cdf2169809b918caffc4a95a52125"
-         */
         const { data: checkinProofs } = await axios.get(
           `${xyoIpfsUrl}/${checkinProofsHash}`,
         )
+        toast('Quest complete! Visit your profile to view your token!')
         return checkinProofs
       } else {
         throw new Error('You already got this token!')
@@ -492,11 +488,12 @@ const unlinkAccountLoader = createLoader(
 const shownIntroLoader = createLoader(
   SHOWN_INTRO_REQUEST,
   {
-    fetch: async ({ xya }) => {
+    fetch: async ({ xya, dispatch }) => {
       await xya.updateUser({
         shownIntro: true,
       })
       saveState('shownIntro', true)
+      dispatch(nextStepSuccess(0))
       return true
     },
     success: shownIntroSuccess,

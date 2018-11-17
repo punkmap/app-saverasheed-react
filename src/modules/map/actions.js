@@ -1,4 +1,4 @@
-import { createActions } from 'redux-awesome-sauce'
+import { createActions} from 'redux-awesome-sauce'
 
 const { types, creators } = createActions(
   {
@@ -12,6 +12,7 @@ const { types, creators } = createActions(
     updateLocationPermission: ['value'],
     updateUserLocation: ['location'],
     centerMap: null,
+    nextStep: ['step']
   },
   { prefix: 'map/' },
 )

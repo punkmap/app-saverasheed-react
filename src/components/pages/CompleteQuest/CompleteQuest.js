@@ -71,6 +71,7 @@ class CompleteQuest extends Component {
     }),
     questWithStatus: questPropTypes.isRequired,
     userAddress: string,
+    pendingCompletion: bool,
   }
 
   render() {
@@ -82,6 +83,7 @@ class CompleteQuest extends Component {
       userAddress,
       linkAccount,
       linkingProvider,
+      pendingCompletion,
       ...props
     } = this.props
 
@@ -112,7 +114,9 @@ class CompleteQuest extends Component {
               can be redeemed for prizes at Spatial 2018!
             </p>
             <p>Future quests will have tokens, but none like this!</p>
-            {userAddress ? (
+            {pendingCompletion ? (
+              <div>Claiming token...</div>
+            ) : userAddress ? (
               <Button
                 className={btnCx}
                 onClick={() => completeQuest(query.hash)}

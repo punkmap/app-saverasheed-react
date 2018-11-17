@@ -12,6 +12,7 @@ import {
   dissoc,
   pipe,
   append,
+  F,
 } from 'ramda'
 
 import { loadState } from '../../util/localStorage'
@@ -35,12 +36,12 @@ import {
   CONFIRM_CHECKIN_REQUEST,
   FETCH_USER_DATA_FAILURE,
   COMPLETE_QUEST_FAILURE,
-  COMPLETE_QUEST_SUCCESS,
+  COMPLETE_QUEST_SUCCESS, COMPLETE_QUEST_REQUEST,
 } from './actions'
 
 export const initialState = {
   loading: false,
-  user: { shownIntro: false },
+  user: { shownIntro: true },
   showingIntro: false,
   hideIntro: true,
 }
@@ -173,6 +174,8 @@ export const handleToggleIntro = (state, { payload: { value } }) =>
     ? assoc('showingIntro', value, state)
     : evolve({ showingIntro: not }, state)
 
+export const handleCompleteQuestRequest = assoc('pendingCompletion', true)
+
 export const handleCompleteQuestSuccess = (
   state,
   { payload: { completionData } },
@@ -181,6 +184,7 @@ export const handleCompleteQuestSuccess = (
     user: evolve({
       completedQuests: append(completionData),
     }),
+    pendingCompletion: F,
   })(state)
 
 const handleCompleteQuestFailure = (state, { payload: { error } }) => state
@@ -201,6 +205,7 @@ const handlers = {
   [LINK_ACCOUNT_SUCCESS]: handleLinkAccountSuccess,
   [UNLINK_ACCOUNT_SUCCESS]: handleUnlinkAccountSuccess,
   [TOGGLE_INTRO]: handleToggleIntro,
+  [COMPLETE_QUEST_REQUEST]: handleCompleteQuestRequest,
   [COMPLETE_QUEST_SUCCESS]: handleCompleteQuestSuccess,
   [COMPLETE_QUEST_FAILURE]: handleCompleteQuestFailure,
 }

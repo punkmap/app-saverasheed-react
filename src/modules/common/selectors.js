@@ -12,6 +12,7 @@ export const getIsFullScreen = derive(
   propOr(screenfull.isFullscreen, 'fullScreen'),
 )
 
+export const getIntroStep = derive(rootSelector, propOr(0, 'introStep'))
 export const getShowingSplash = derive(
   rootSelector,
   propOr(false, 'showingSplash'),
