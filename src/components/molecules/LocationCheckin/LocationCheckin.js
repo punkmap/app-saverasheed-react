@@ -82,7 +82,7 @@ const LocationCheckin = ({
     {checked && <X onClick={closePopup}>X</X>}
     <PopupTitle>You found {name}!</PopupTitle>
     <PopupBody>
-      <PoiImage src={`https://ipfs.xyo.network/ipfs/${image}`} alt={name} />
+      {image && <PoiImage src={`https://ipfs.xyo.network/ipfs/${image}`} alt={name} />}
       <PoiDescription>
         {description}
         {checkingIn === id ? (

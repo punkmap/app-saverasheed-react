@@ -37,7 +37,7 @@ import {
   CONFIRM_CHECKIN_REQUEST,
   confirmCheckinSuccess,
   confirmCheckinFailure,
-  FETCH_USER_DATA_SUCCESS,
+  // FETCH_USER_DATA_SUCCESS,
   LOGOUT_REQUEST,
   logoutFailure,
   logoutSuccess,
