@@ -27,3 +27,6 @@ Log in or create an account using any method (Portis is preferred).
 - quest maker (could be simple)
 - UX improvements (open-ended)
 - a better intro flow
+
+<br><hr><br>
+<p align="center">Made with  ❤️  by [<b>XY - The Persistent Company</b>] (https://xy.company)</p>
