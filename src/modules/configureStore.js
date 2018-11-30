@@ -1,5 +1,5 @@
 import * as Sentry from '@sentry/browser'
-import { filter, pipe, map, endsWith } from 'ramda'
+import { filter, pipe, map, endsWith, propOr, pathOr } from 'ramda'
 import { createStore, applyMiddleware, compose, combineReducers } from 'redux'
 import thunkMiddleware from 'redux-thunk'
 import { createBrowserHistory } from 'history'
@@ -20,9 +20,9 @@ import { isArray, noop } from '../util/ramda-extra'
 const multi = ({ dispatch }) => next => action =>
   isArray(action)
     ? pipe(
-        filter(Boolean),
-        map(dispatch),
-      )(action)
+    filter(Boolean),
+    map(dispatch),
+    )(action)
     : next(action)
 
 const logger = store => next => action => {
@@ -35,8 +35,11 @@ const logger = store => next => action => {
 let errorToastId
 
 const errorHandler = (action, state, error) => {
+  if (!error) return
   if (errorToastId) toast.dismiss(errorToastId)
-  errorToastId = toast.error(error)
+  const errMsg = pathOr(propOr('', 'error', error), ['error', 'message'], error)
+
+  errorToastId = toast.error(errMsg)
   Sentry.withScope(scope => {
     scope.setExtra('action', action)
     scope.setExtra('state', state)

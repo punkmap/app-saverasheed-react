@@ -1,5 +1,6 @@
 import { createLoader, fixedWait } from 'redux-dataloader'
 import { push } from 'connected-react-router'
+import { isEmpty, omit, pipe } from 'ramda'
 
 import { fetchUserDataRequest } from '../auth/actions'
 import { getActiveQuest, getUser } from '../auth/selectors'
@@ -26,7 +27,7 @@ const initAppLoader = createLoader(
     fetch: async ({ dispatch, getState }) => {
       await dispatch(fetchQuestsRequest())
       const user = getUser(getState())
-      if (!user) {
+      if (!user || pipe(omit(['shownIntro']), isEmpty)(user)) {
         return
       }
       await dispatch(fetchUserDataRequest())
