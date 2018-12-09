@@ -146,9 +146,9 @@ export default class XYAccount {
 
   async getQuests() {
     const docs = await this.app
-      .firestore()
-      .collection('quests')
-      .get()
+                           .firestore()
+                           .collection('quests')
+                           .get()
     return docs.docs.map(
       doc => (doc.exists ? { ...doc.data(), hash: doc.id } : null),
     )

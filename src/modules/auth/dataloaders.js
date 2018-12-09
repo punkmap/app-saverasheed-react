@@ -255,7 +255,7 @@ const authLoader = createLoader(
       }
     },
     fetch: async ({
-      action: { type, authType, email, password },
+      action: { payload: { type, authType, email, password } },
       dispatch,
       xya,
     }) => {
@@ -398,13 +398,13 @@ const linkAccountLoader = createLoader(
 
       return address
         ? append(providerData, {
-            displayName: null,
-            email,
-            phoneNumber: null,
-            photoURL: null,
-            providerId: 'portis',
-            uid: address,
-          })
+          displayName: null,
+          email,
+          phoneNumber: null,
+          photoURL: null,
+          providerId: 'portis',
+          uid: address,
+        })
         : providerData
     },
     success: (ctx, pData) => linkAccountSuccess(pData),
@@ -466,13 +466,13 @@ const unlinkAccountLoader = createLoader(
       await xya.updateProfile({ displayName, photoURL })
       return address
         ? append(providerData, {
-            displayName: null,
-            email,
-            phoneNumber: null,
-            photoURL: null,
-            providerId: 'portis',
-            uid: address,
-          })
+          displayName: null,
+          email,
+          phoneNumber: null,
+          photoURL: null,
+          providerId: 'portis',
+          uid: address,
+        })
         : providerData
     },
     success: (ctx, pData) => unlinkAccountSuccess(pData),
