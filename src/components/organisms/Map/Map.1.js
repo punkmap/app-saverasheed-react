@@ -1,19 +1,17 @@
 import React, { Component, Fragment } from 'react'
 import { map, mapObjIndexed, assoc, pipe, partition, prop } from 'ramda'
 import PropTypes from 'prop-types'
-//import { Marker } from 'react-map-gl'
+import { Marker } from 'react-map-gl'
 import { AutoSizer } from 'react-virtualized'
-//import { ControlledPOILayer, Map } from 'sdk-mapbox-react'
+import { ControlledPOILayer, Map } from 'sdk-mapbox-react'
 
 import { mapArrIndexed, size } from '../../../util/ramda-extra'
-//import ufoPinImg from '../../../assets/UFO_mapPin.png'
+import ufoPinImg from '../../../assets/UFO_mapPin.png'
 import ufoPinData from '../../../assets/UFO_mapPin'
-//import checkedUfoPinImg from '../../../assets/UFO_mapPin_checked.png'
-//import playerIcon from '../../../assets/player-icon.png'
+import checkedUfoPinImg from '../../../assets/UFO_mapPin_checked.png'
+import playerIcon from '../../../assets/player-icon.png'
 import checkedUfoPinData from '../../../assets/UFO_mapPin_checked'
 import { poiPropTypes } from '../../../fixtures/pois'
-
-import ESRIScene from './ESRIScene'
 
 const { func, string, arrayOf, shape, number } = PropTypes
 
@@ -130,17 +128,12 @@ class MapPage extends Component {
         map(assoc('icon', idx === 0 ? iconChecked : icon), poi),
       ),
     )(pois)
-    
-    const options = {
-      url: 'https://js.arcgis.com/4.6/'
-    };
-    
+
     return (
       <AutoSizer>
         {({ width, height }) => (
           <Fragment>
-            <ESRIScene />
-            {/* <Map
+            <Map
               mapboxApiAccessToken="pk.eyJ1IjoiY2FydGVyaGFycmlzb24iLCJhIjoiY2pmOG0zcjB2MXZ0ZDJ4cDRxZHVuaGVsNSJ9.35FdhgnKKLCTdtJgah2csQ"
               viewport={{ ...viewport, width, height }}
               onViewportChange={changeViewport}
@@ -192,7 +185,7 @@ class MapPage extends Component {
                   disablePolygon
                 />
               )}
-            </Map> */}
+            </Map>
           </Fragment>
         )}
       </AutoSizer>
