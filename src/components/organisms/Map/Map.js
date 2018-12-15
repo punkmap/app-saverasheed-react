@@ -13,7 +13,7 @@ import ufoPinData from '../../../assets/UFO_mapPin'
 import checkedUfoPinData from '../../../assets/UFO_mapPin_checked'
 import { poiPropTypes } from '../../../fixtures/pois'
 
-import ESRIScene from './ESRIScene'
+import ESRIScene from '../ESRIScene/ESRIScene'
 
 const { func, string, arrayOf, shape, number } = PropTypes
 
@@ -139,7 +139,7 @@ class MapPage extends Component {
       <AutoSizer>
         {({ width, height }) => (
           <Fragment>
-            <ESRIScene />
+            <ESRIScene w={width} h={height}/>
             {/* <Map
               mapboxApiAccessToken="pk.eyJ1IjoiY2FydGVyaGFycmlzb24iLCJhIjoiY2pmOG0zcjB2MXZ0ZDJ4cDRxZHVuaGVsNSJ9.35FdhgnKKLCTdtJgah2csQ"
               viewport={{ ...viewport, width, height }}

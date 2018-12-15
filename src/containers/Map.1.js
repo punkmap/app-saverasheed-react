@@ -13,7 +13,7 @@ import {
   entityClick,
   selectEntity,
 } from '../modules/map/actions'
-import { ESRIScene } from '../components/organisms/ESRIScene'
+import { Map } from '../components/organisms/Map'
 
 const mapStateToProps = subscribe({
   getSelectedEntities,
@@ -30,6 +30,6 @@ const actions = {
 }
 
 export default connect(
-  // mapStateToProps,
-  // actions,
-)(ESRIScene)
+  mapStateToProps,
+  actions,
+)(Map)

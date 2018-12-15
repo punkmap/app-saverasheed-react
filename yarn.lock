@@ -5428,6 +5428,16 @@ esrecurse@^4.1.0:
   dependencies:
     estraverse "^4.1.0"
 
+esri-loader-react@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/esri-loader-react/-/esri-loader-react-2.0.3.tgz#8fbb524dc7ec33b366c68aff9018ced8c26f8b9d"
+  integrity sha512-Q2EywQ0aRIcTTe+GF/HJYcSGezBKSE9Vo0mScebRvj87bXa+DJjRsfZKke4aVp1+gdHDxV3h40UApRCDwuz29A==
+
+esri-loader@^2.5.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/esri-loader/-/esri-loader-2.5.0.tgz#2f3c366a99672ac5f1c89aa62038b3ec36bbb4f8"
+  integrity sha512-At3TngH083ZdX8ePEX+Nehjym/nzaZjEEiqydgd9qZ0ax8E6EK+XP3Cd6BDBcm2sjzmQeQuSkMher37h/hY3zA==
+
 estraverse@^4.0.0, estraverse@^4.1.0, estraverse@^4.1.1, estraverse@^4.2.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/estraverse/-/estraverse-4.2.0.tgz#0dee3fed31fcd469618ce7342099fc1afa0bdb13"

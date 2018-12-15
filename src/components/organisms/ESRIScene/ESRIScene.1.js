@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import EsriLoaderReact from 'esri-loader-react';
 //import SidePanel from './SidePanel'
-
+import './ESRIScene.css'
 class ESRIScene extends Component {
 
   render() {
@@ -19,26 +19,26 @@ class ESRIScene extends Component {
             new SceneView({
               container: containerNode
               , map: new Map({
-                  basemap: 'satellite'
+                  basemap: 'hybrid'
                   , ground: 'world-elevation'
               })
               , camera: {
                   position: {
-                    x: -9188342.28,
-                    y: 4244395.33,
-                    z: 823,
+                    x:  -117.185087,
+                    y: 32.715736,
+                    z: 300,
                     spatialReference: {
-                      wkid: 3857
+                      wkid: 4326
                     }
                   },
-                  heading: 280,
+                  heading: 90,
                   tilt: 77.5
               }
             }).on('click', function(e){
               //TODO: 1. get elevation reference and lat lon coordinate
               //TODO: 2. create web3.js token at click coordinates and elevation 
               console.log('quit clicking me mapPoint: ' + JSON.stringify(e.mapPoint));
-            }) 
+            })
           }} 
         />
         {/* <SidePanel ref="sidePanel"/> */}
