@@ -3,7 +3,7 @@ import EsriLoaderReact from 'esri-loader-react';
 //import SidePanel from './SidePanel'
 import './ESRIScene.css'
 class ESRIScene extends Component {
-  loadMap = ({loadedModules: [Map, SceneView, DefaultUI], containerNode}) => {
+  loadMap = ({loadedModules: [Map, SceneView, Locate, DefaultUI], containerNode}) => {
     console.log('esriMapLoader');
     const sceneView = new SceneView({
       container: containerNode
@@ -28,15 +28,24 @@ class ESRIScene extends Component {
       
       console.log('when')
       console.log('sceneView.ui.components: ' + e.ui.components)  
-      e.ui.padding = { top: 96, left: 21, right: 0, bottom: 0 };
-      e.ui.components=["attribution", "navigation-toggle", "compass", "zoom"];
+      e.ui.padding = { top: 96, left: 21, right: 21, bottom: 0 };
+      e.ui.components=["zoom", "navigation-toggle", "compass"];
+      var locateBtn = new Locate({
+        view: e
+      });
+
+      // Add the locate widget to the top left corner of the view
+      e.ui.add(locateBtn, {
+        position: "top-right"
+      });
+
+      e.on('click', function(e){
+        //TODO: 1. get elevation reference and lat lon coordinate
+        //TODO: 2. create web3.js token at click coordinates and elevation 
+        console.log('quit clicking me mapPoint: ' + JSON.stringify(e.mapPoint));
+      })
   })
   
-  // sceneView.on('click', function(e){
-  //     //TODO: 1. get elevation reference and lat lon coordinate
-  //     //TODO: 2. create web3.js token at click coordinates and elevation 
-  //     console.log('quit clicking me mapPoint: ' + JSON.stringify(e.mapPoint));
-  //   })
   }
 
   render() {
@@ -48,34 +57,9 @@ class ESRIScene extends Component {
       <div className="ESRIScene">
         <EsriLoaderReact 
           options={options}
-          modulesToLoad={['esri/Map', 'esri/views/SceneView', 'esri/views/ui/DefaultUI']}    
+          modulesToLoad={['esri/Map', 'esri/views/SceneView', 'esri/widgets/Locate', 'esri/views/ui/DefaultUI']}    
           onReady={this.loadMap}
-          // {({loadedModules: [Map, SceneView], containerNode}) => {
-          //   console.log('esriMapLoader');
-          //   new SceneView({
-          //     container: containerNode
-          //     , map: new Map({
-          //         basemap: 'hybrid'
-          //         , ground: 'world-elevation'
-          //     })
-          //     , camera: {
-          //         position: {
-          //           x:  -117.185087,
-          //           y: 32.715736,
-          //           z: 300,
-          //           spatialReference: {
-          //             wkid: 4326
-          //           }
-          //         },
-          //         heading: 90,
-          //         tilt: 77.5
-          //     }
-          //   }).on('click', function(e){
-          //     //TODO: 1. get elevation reference and lat lon coordinate
-          //     //TODO: 2. create web3.js token at click coordinates and elevation 
-          //     console.log('quit clicking me mapPoint: ' + JSON.stringify(e.mapPoint));
-          //   })
-          // }} 
+           
         />
         {/* <SidePanel ref="sidePanel"/> */}
       </div>
