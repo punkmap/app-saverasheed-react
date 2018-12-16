@@ -51,7 +51,7 @@ class ESRIScene extends Component {
   render() {
 
     const options = {
-      url: 'https://js.arcgis.com/4.6/'
+      url: 'https://js.arcgis.com/4.10/'
     };
     return (
       <div className="ESRIScene">
