@@ -44,10 +44,6 @@ class ESRIMap extends Component {
         //TODO: 2. create web3.js token at click coordinates and elevation 
         console.log('quit clicking me mapPoint: ' + JSON.stringify(e.mapPoint));
       })
-      // var tileLayer = new VectorTileLayer({
-      //   url: "https://jsapi.maps.arcgis.com/sharing/rest/content/items/75f4dfdff19e445395653121a95a85db/resources/styles/root.json"
-      // });
-      // map.add(tileLayer);
   })
   
   }

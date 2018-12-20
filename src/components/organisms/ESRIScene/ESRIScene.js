@@ -3,13 +3,14 @@ import EsriLoaderReact from 'esri-loader-react';
 //import SidePanel from './SidePanel'
 import './ESRIScene.css'
 class ESRIScene extends Component {
-  loadMap = ({loadedModules: [Map, SceneView, Locate, DefaultUI], containerNode}) => {
+  loadMap = ({loadedModules: [WebScene, SceneView, Locate, DefaultUI], containerNode}) => {
     console.log('that esriMapLoader');
     const sceneView = new SceneView({
       container: containerNode
-      , map: new Map({
-          basemap: 'hybrid'
-          , ground: 'world-elevation'
+      , map: new WebScene({
+        portalItem: { // autocasts as new PortalItem()
+          id: "a4d990eaeea64f62809e74f0d83a4ee2"
+        }
       })
       , ui: new DefaultUI()
       , camera: {
@@ -26,7 +27,7 @@ class ESRIScene extends Component {
       }
     }).when(function(e){
       
-      console.log('when')
+      console.log('when pancakes house?')
       console.log('sceneView.ui.components: ' + e.ui.components)  
       e.ui.padding = { top: 96, left: 21, right: 21, bottom: 0 };
       e.ui.components=["zoom", "navigation-toggle", "compass"];
@@ -57,7 +58,7 @@ class ESRIScene extends Component {
       <div className="ESRIScene">
         <EsriLoaderReact 
           options={options}
-          modulesToLoad={['esri/Map', 'esri/views/SceneView', 'esri/widgets/Locate', 'esri/views/ui/DefaultUI']}    
+          modulesToLoad={['esri/WebScene', 'esri/views/SceneView', 'esri/widgets/Locate', 'esri/views/ui/DefaultUI']}    
           onReady={this.loadMap}
            
         />
